@@ -1,0 +1,12 @@
+C:\Users\Monster\source\repos\LiraProject\CoreLayer\bin\Debug\net6.0\CoreLayer.deps.json
+C:\Users\Monster\source\repos\LiraProject\CoreLayer\bin\Debug\net6.0\CoreLayer.dll
+C:\Users\Monster\source\repos\LiraProject\CoreLayer\bin\Debug\net6.0\CoreLayer.pdb
+C:\Users\Monster\source\repos\LiraProject\CoreLayer\obj\Debug\net6.0\CoreLayer.csproj.AssemblyReference.cache
+C:\Users\Monster\source\repos\LiraProject\CoreLayer\obj\Debug\net6.0\CoreLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Monster\source\repos\LiraProject\CoreLayer\obj\Debug\net6.0\CoreLayer.AssemblyInfoInputs.cache
+C:\Users\Monster\source\repos\LiraProject\CoreLayer\obj\Debug\net6.0\CoreLayer.AssemblyInfo.cs
+C:\Users\Monster\source\repos\LiraProject\CoreLayer\obj\Debug\net6.0\CoreLayer.csproj.CoreCompileInputs.cache
+C:\Users\Monster\source\repos\LiraProject\CoreLayer\obj\Debug\net6.0\CoreLayer.dll
+C:\Users\Monster\source\repos\LiraProject\CoreLayer\obj\Debug\net6.0\refint\CoreLayer.dll
+C:\Users\Monster\source\repos\LiraProject\CoreLayer\obj\Debug\net6.0\CoreLayer.pdb
+C:\Users\Monster\source\repos\LiraProject\CoreLayer\obj\Debug\net6.0\ref\CoreLayer.dll
