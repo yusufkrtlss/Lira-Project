@@ -1,39 +1,83 @@
-﻿@{
+﻿
+@using EntityLayer.Concrete
+@model List<Companies>
+@{
     ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<table>
+    <tr>
+        <th>
+            symbol
+        </th>
+        <th>
+            name
+        </th>
+        <th>
+            price
+        </th>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>
+                @item.CompanySymbol
+            </td>
+            <td>
+                @item.CompanyName
+            </td>
+            <td>
+                @item.CompanyBalance
+            </td>
+        </tr>
+    }
+</table>
+<form class="form-inline" method="post">
+    
+    <input type="text" id="id" placeholder="Search" class="form-control" name="body" />
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <button id="searchBtn" type="button" asp-controller="Home" asp-action="Details">Search</button>
+</form>
+
+<div>
+    You selected Vendor: <b><span id="companyName"></span></b>
 </div>
 
-<body>
-    <form class="form-inline" method="post">
-        <input type="hidden" asp-action="Post.Id" />
-        <input type="text" id="Title" placeholder="Search" class="form-control" name="body" />
-        <button class="btn btn-outline-info" asp-controller="Posts" asp-action="Search"></button>
-    </form>
-</body>
 
-<script>
-    $(document).ready(function () {
-        $("#Title").autocomplete({
-            source: function (request, response) {
-                $.ajax({
-                    url: "/posts/content",
-                    type: "POST",
-                    dataType: "json",
-                    data: { body: request.term },
-                    success: function (data) {
-                        response($.map(data, function (val, item) {
-                            return {
-                                label: val.title,
-                                value: val.id
-                            };
-                        }));
-                    }
-                });
-            }
-        });
-    });
-</script>
+@section Scripts{
+       <script src="~/lib/jquery/dist/jquery.min.js"></script>
+       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+       <script>
+
+
+        //$(document).ready(function () {
+        //    $("#id").autocomplete({
+        //        source: function (request, response) {
+        //            $.ajax({
+        //                url: '/home/search',
+        //                headers: { "RequestVerificationToken": $('input[CompanyName="__RequestVerificationToken"]').val() },
+        //                data: { "term": request.term },
+        //                dataType: "json",
+        //                success: function (data) {
+        //                    response($.map(data, function (item) {
+        //                        return item;
+        //                    }))
+        //                },
+        //                error: function (xhr, textStatus, error) {
+        //                    alert(xhr.statusText);
+        //                    alert(textStatus);
+        //                    alert(error);
+        //                },
+        //                failure: function (response) {
+        //                    alert("failure " + response.responseText);
+        //                }
+        //            });
+        //        },
+        //        select: function (e, i) {
+        //            $("#id").text(i.item.value);
+        //        },
+        //        minLength: 2
+        //    });
+        //});
+    </script>
+}

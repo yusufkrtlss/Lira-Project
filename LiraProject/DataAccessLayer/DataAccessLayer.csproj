@@ -20,7 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Abstract\" />
     <Folder Include="Concrete\EntityFramework\EfRepositories\" />
     <Folder Include="Concrete\EntityFramework\Mapping\" />
   </ItemGroup>
