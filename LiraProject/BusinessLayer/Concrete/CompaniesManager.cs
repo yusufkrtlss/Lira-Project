@@ -29,6 +29,8 @@ namespace BusinessLayer.Concrete
             return _companiesDal.GetListAll();
         }
 
+       
+
         public Companies GetById(int id)
         {
             return _companiesDal.GetById(id);

@@ -32,16 +32,18 @@
         </tr>
     }
 </table>
-<form class="form-inline" method="post">
-    
-    <input type="text" id="id" placeholder="Search" class="form-control" name="body" />
-
+    <form class="form-inline" method="get">
+            <div class="input-group mb-3">
+        <input type="text" id="id" placeholder="Search" class="form-control" name="body" />
+                 <div class="input-group-append">
     <button id="searchBtn" type="button" asp-controller="Home" asp-action="Details">Search</button>
-</form>
+            </div>
+                </div>
+    </form>
 
-<div>
+@*<div>
     You selected Vendor: <b><span id="companyName"></span></b>
-</div>
+</div>*@
 
 
 @section Scripts{

@@ -11,6 +11,7 @@ namespace BusinessLayer.Abstract
     {
         void CompanyAdd(Companies companies);
         List<Companies> GetAllCompanies();
+        
         Companies GetById(int id);
     }
 }

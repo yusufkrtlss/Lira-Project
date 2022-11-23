@@ -11,7 +11,7 @@
         "projectName": "BusinessLayer",
         "projectPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\BusinessLayer\\BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\yigit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\BusinessLayer\\obj\\",
+        "outputPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yigit\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -73,7 +73,7 @@
         "projectName": "DataAccessLayer",
         "projectPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\yigit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yigit\\AppData\\Roaming\\NuGet\\NuGet.Config",

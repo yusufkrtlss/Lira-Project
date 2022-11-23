@@ -54,7 +54,7 @@ namespace LiraProject.Controllers
         [HttpGet("search")]
         [Route("/home/search")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Search()
+        public JsonResult SearchAsync()
         {
             string term = HttpContext.Request.Query["term"].ToString().ToUpper();
             var query = cm.GetAllCompanies().AsQueryable();
@@ -69,10 +69,10 @@ namespace LiraProject.Controllers
             }
 
             // load the courses
-            var courses = await query.ToListAsync();
+            var courses = query.ToList();
 
-            // return the data as json result
-            return Ok(courses);
+            
+            return Json(courses);
         }
 
         public IActionResult Privacy()
