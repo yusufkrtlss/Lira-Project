@@ -6,3 +6,34 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<body>
+    <form class="form-inline" method="post">
+        <input type="hidden" asp-action="Post.Id" />
+        <input type="text" id="Title" placeholder="Search" class="form-control" name="body" />
+        <button class="btn btn-outline-info" asp-controller="Posts" asp-action="Search"></button>
+    </form>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("#Title").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: "/posts/content",
+                    type: "POST",
+                    dataType: "json",
+                    data: { body: request.term },
+                    success: function (data) {
+                        response($.map(data, function (val, item) {
+                            return {
+                                label: val.title,
+                                value: val.id
+                            };
+                        }));
+                    }
+                });
+            }
+        });
+    });
+</script>
