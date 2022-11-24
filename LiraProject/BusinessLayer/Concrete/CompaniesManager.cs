@@ -35,5 +35,10 @@ namespace BusinessLayer.Concrete
         {
             return _companiesDal.GetById(id);
         }
+
+        public Companies GetBySymbol(string symbol)
+        {
+            return _companiesDal.GetSymbol(symbol);
+        }
     }
 }

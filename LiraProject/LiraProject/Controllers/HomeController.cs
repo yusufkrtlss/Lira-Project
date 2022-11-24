@@ -21,33 +21,25 @@ namespace LiraProject.Controllers
             var values = cm.GetAllCompanies();
             return View(values);
         }
-        public IActionResult Details(int id)
-        {
-            var value = cm.GetById(id);
-            return View(value);
-        }
 
-        [AllowAnonymous]
         [HttpGet]
-        public async Task<JsonResult> GetCompanysAsync(string searchQuery)
+        [Route("/home/details")]
+        public IActionResult Details(string searchString)
         {
             var query = cm.GetAllCompanies().AsQueryable();
-
-            if (!string.IsNullOrEmpty(searchQuery))
+            if (!string.IsNullOrEmpty(searchString))
             {
-                query = query.Where(c =>
-
-                        c.CompanySymbol.Contains(searchQuery) ||
-                        c.CompanyName.Contains(searchQuery)
-                );
+                query = query.Where(c => c.CompanySymbol == searchString);
+                
             }
+            int id = query.Select(c => c.CompanyId).FirstOrDefault();
 
-            // load the courses
-            var courses = await query.ToListAsync();
-
-            // return the data as json result
-            return new JsonResult(courses);
+            var stocks = cm.GetById(id);
+            
+            return View(stocks);
         }
+
+        
        
         
         [Produces("application/json")]
@@ -66,13 +58,10 @@ namespace LiraProject.Controllers
                         c.CompanySymbol.Contains(term) ||
                         c.CompanyName.Contains(term)
                 );
-            }
-            
-            
+            }           
             var companies = query.Select(c=>c.CompanySymbol).ToList();
 
-            
-            return Json(companies);
+           return Json(companies);
         }
 
         public IActionResult Privacy()

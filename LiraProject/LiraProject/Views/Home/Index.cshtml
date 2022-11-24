@@ -5,7 +5,8 @@
     ViewData["Title"] = "Home Page";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<table>
+<body>
+@*<table>
     <tr>
         <th>
             symbol
@@ -31,19 +32,98 @@
             </td>
         </tr>
     }
-</table>
-    <form class="form-inline" method="get">
-            <div class="input-group mb-3">
-        <input type="text" id="id" placeholder="Search" class="form-control" name="body" />
-                 <div class="input-group-append">
-    <button id="searchBtn" type="button" asp-controller="Home" asp-action="Details">Search</button>
-            </div>
-                </div>
-    </form>
+</table>*@
+   
+<form autocomplete="off" >
+    <div class="autocomplete" >
+        <input id="searchId" type="text" placeholder="Search" name="searchString">
 
-@*<div>
-    You selected Vendor: <b><span id="companyName"></span></b>
-</div>*@
+        <input type="submit" asp-controller="home" asp-action="details">
+        
+    </div>
+    
+</form>
+    
+
+</body>
+
+<style>
+    
+
+    body {
+        font: 16px Arial;
+    }
+    .ui-autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    display: none;
+    min-width: 160px;   
+    padding: 4px 0;
+    margin: 0 0 10px 25px;
+    list-style: none;
+    background-color: #ffffff;
+    border-color: #ccc;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+}
+
+.ui-menu-item > a.ui-corner-all {
+    display: block;
+    padding: 3px 15px;
+    clear: both;
+    font-weight: normal;
+    line-height: 18px;
+    color: #555555;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.ui-state-hover, .ui-state-active {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0088cc;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-image: none;
+}
+.ui-helper-hidden-accessible {
+  display: none !important;
+}
+   
+    input{
+        border: 1px solid;
+        background-color: #f1f1f1;
+        padding: 8px;
+        font-size: 16px;
+    }
+    
+    input[type=text]{
+        background-color: #f1f1f1;
+        width: 100%;
+    }
+
+    input[type=submit] {
+        background-color: DodgerBlue;
+        color: #fff;
+    }
+    
+</style>
 
 
 @section Scripts{
@@ -52,34 +132,6 @@
        <script>
 
 
-        //$(document).ready(function () {
-        //    $("#id").autocomplete({
-        //        source: function (request, response) {
-        //            $.ajax({
-        //                url: '/home/search',
-        //                headers: { "RequestVerificationToken": $('input[CompanyName="__RequestVerificationToken"]').val() },
-        //                data: { "term": request.term },
-        //                dataType: "json",
-        //                success: function (data) {
-        //                    response($.map(data, function (item) {
-        //                        return item;
-        //                    }))
-        //                },
-        //                error: function (xhr, textStatus, error) {
-        //                    alert(xhr.statusText);
-        //                    alert(textStatus);
-        //                    alert(error);
-        //                },
-        //                failure: function (response) {
-        //                    alert("failure " + response.responseText);
-        //                }
-        //            });
-        //        },
-        //        select: function (e, i) {
-        //            $("#id").text(i.item.value);
-        //        },
-        //        minLength: 2
-        //    });
-        //});
+        
     </script>
 }

@@ -22,6 +22,11 @@ namespace DataAccessLayer.EfRepositories
             using var c = new LiraDb();
             return c.Set<T>().Find(id);
         }
+        public T GetSymbol(string symbol)
+        {
+            using var c = new LiraDb();
+            return c.Set<T>().FirstOrDefault();
+        }
 
         public List<T> GetListAll()
         {

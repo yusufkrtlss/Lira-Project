@@ -13,5 +13,6 @@ namespace BusinessLayer.Abstract
         List<Companies> GetAllCompanies();
         
         Companies GetById(int id);
+        Companies GetBySymbol(string symbol);
     }
 }

@@ -3,7 +3,7 @@
 
 // Write your JavaScript code.
 $(document).ready(function () {
-    $("#id").autocomplete({
+    $("#searchId").autocomplete({
         source: function (request, response) {
             $.ajax({
                 url: '/home/search',
@@ -15,19 +15,48 @@ $(document).ready(function () {
                         return item;
                     }))
                 },
-                //error: function (xhr, textStatus, error) {
-                //    alert(xhr.statusText);
-                //    alert(textStatus);
-                //    alert(error);
-                //},
+                error: function (xhr, textStatus, error) {
+                    alert(xhr.statusText);
+                    alert(textStatus);
+                    alert(error);
+                },
                 failure: function (response) {
                     alert("failure " + response.responseText);
                 }
             });
         },
         select: function (e, i) {
-            $("#id").text(i.item.value);
+            $("#searchId").text(i.item.value);
         },
-        minLength: 2
+        minLength: 1
+    });
+});
+
+$(document).ready(function () {
+    var trigger = $('.hamburger'),
+        overlay = $('.overlay'),
+        isClosed = false;
+
+    trigger.click(function () {
+        hamburger_cross();
+    });
+
+    function hamburger_cross() {
+
+        if (isClosed == true) {
+            overlay.hide();
+            trigger.removeClass('is-open');
+            trigger.addClass('is-closed');
+            isClosed = false;
+        } else {
+            overlay.show();
+            trigger.removeClass('is-closed');
+            trigger.addClass('is-open');
+            isClosed = true;
+        }
+    }
+
+    $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
     });
 });
