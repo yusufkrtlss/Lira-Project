@@ -67,12 +67,12 @@ namespace LiraProject.Controllers
                         c.CompanyName.Contains(term)
                 );
             }
-
-            // load the courses
-            var courses = query.ToList();
+            
+            
+            var companies = query.Select(c=>c.CompanySymbol).ToList();
 
             
-            return Json(courses);
+            return Json(companies);
         }
 
         public IActionResult Privacy()

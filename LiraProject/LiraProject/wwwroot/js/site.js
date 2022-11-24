@@ -15,11 +15,11 @@ $(document).ready(function () {
                         return item;
                     }))
                 },
-                error: function (xhr, textStatus, error) {
-                    alert(xhr.statusText);
-                    alert(textStatus);
-                    alert(error);
-                },
+                //error: function (xhr, textStatus, error) {
+                //    alert(xhr.statusText);
+                //    alert(textStatus);
+                //    alert(error);
+                //},
                 failure: function (response) {
                     alert("failure " + response.responseText);
                 }
