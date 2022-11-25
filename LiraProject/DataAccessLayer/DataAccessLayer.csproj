@@ -7,6 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Abstract\**" />
+    <Compile Remove="Concrete\EntityFramework\EfRepositories\**" />
+    <Compile Remove="Concrete\EntityFramework\Mapping\**" />
+    <EmbeddedResource Remove="Abstract\**" />
+    <EmbeddedResource Remove="Concrete\EntityFramework\EfRepositories\**" />
+    <EmbeddedResource Remove="Concrete\EntityFramework\Mapping\**" />
+    <None Remove="Abstract\**" />
+    <None Remove="Concrete\EntityFramework\EfRepositories\**" />
+    <None Remove="Concrete\EntityFramework\Mapping\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
       <PrivateAssets>all</PrivateAssets>
@@ -17,12 +29,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Abstract\" />
-    <Folder Include="Concrete\EntityFramework\EfRepositories\" />
-    <Folder Include="Concrete\EntityFramework\Mapping\" />
   </ItemGroup>
 
   <ItemGroup>

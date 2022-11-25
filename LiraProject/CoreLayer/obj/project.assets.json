@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Monster\\source\\repos\\LiraProject\\CoreLayer\\CoreLayer.csproj",
+      "projectUniqueName": "C:\\Users\\Monster\\Source\\Repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj",
       "projectName": "CoreLayer",
-      "projectPath": "C:\\Users\\Monster\\source\\repos\\LiraProject\\CoreLayer\\CoreLayer.csproj",
+      "projectPath": "C:\\Users\\Monster\\Source\\Repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj",
       "packagesPath": "C:\\Users\\Monster\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Monster\\source\\repos\\LiraProject\\CoreLayer\\obj\\",
+      "outputPath": "C:\\Users\\Monster\\Source\\Repos\\Lira-Project\\LiraProject\\CoreLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Monster\\AppData\\Roaming\\NuGet\\NuGet.Config",

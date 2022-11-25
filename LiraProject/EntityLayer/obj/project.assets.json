@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Monster\\source\\repos\\LiraProject\\EntityLayer\\EntityLayer.csproj",
+      "projectUniqueName": "C:\\Users\\Monster\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj",
       "projectName": "EntityLayer",
-      "projectPath": "C:\\Users\\Monster\\source\\repos\\LiraProject\\EntityLayer\\EntityLayer.csproj",
+      "projectPath": "C:\\Users\\Monster\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj",
       "packagesPath": "C:\\Users\\Monster\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Monster\\source\\repos\\LiraProject\\EntityLayer\\obj\\",
+      "outputPath": "C:\\Users\\Monster\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Monster\\AppData\\Roaming\\NuGet\\NuGet.Config",
