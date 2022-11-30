@@ -5,12 +5,28 @@
       "PackagePath": "staticwebassets\\LiraProject.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\LiraProject\\wwwroot\\css\\dataTables.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\css\\dataTables.bootstrap5.min.css"
+    },
+    {
       "Id": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\LiraProject\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\LiraProject\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\LiraProject\\wwwroot\\img\\search.png",
+      "PackagePath": "staticwebassets\\img\\search.png"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\LiraProject\\wwwroot\\js\\dataTables.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\js\\dataTables.bootstrap5.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\LiraProject\\wwwroot\\js\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.dataTables.min.js"
     },
     {
       "Id": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\LiraProject\\wwwroot\\js\\site.js",

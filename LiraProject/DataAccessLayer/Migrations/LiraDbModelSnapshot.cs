@@ -30,11 +30,14 @@ namespace DataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CompanyId"));
 
-                    b.Property<float>("CompanyBalance")
-                        .HasColumnType("real");
+                    b.Property<double>("CompanyBalance")
+                        .HasColumnType("float");
 
-                    b.Property<float>("CompanyIncomeStatement")
-                        .HasColumnType("real");
+                    b.Property<double>("CompanyEBITDA")
+                        .HasColumnType("float");
+
+                    b.Property<double>("CompanyIncomeStatement")
+                        .HasColumnType("float");
 
                     b.Property<string>("CompanyInformation")
                         .IsRequired()
@@ -44,11 +47,29 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float>("CompanyPriceGainRate")
-                        .HasColumnType("real");
+                    b.Property<double>("CompanyPriceGainRate")
+                        .HasColumnType("float");
 
-                    b.Property<float>("CompanyProfit")
-                        .HasColumnType("real");
+                    b.Property<double>("CompanyProfit")
+                        .HasColumnType("float");
+
+                    b.Property<double>("CompanyRegularMarketChange")
+                        .HasColumnType("float");
+
+                    b.Property<double>("CompanyRegularMarketChangePercent")
+                        .HasColumnType("float");
+
+                    b.Property<double>("CompanyRegularMarketDayHigh")
+                        .HasColumnType("float");
+
+                    b.Property<double>("CompanyRegularMarketDayLow")
+                        .HasColumnType("float");
+
+                    b.Property<double>("CompanyRegularMarketPrice")
+                        .HasColumnType("float");
+
+                    b.Property<double>("CompanyRegularMarketVolume")
+                        .HasColumnType("float");
 
                     b.Property<string>("CompanySymbol")
                         .IsRequired()

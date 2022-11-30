@@ -1,14 +1,207 @@
 ﻿
 @using EntityLayer.Concrete
 @model Companies
+@{
+    ViewData["Title"] = "Details Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string marketPrice = Model.CompanyRegularMarketPrice.ToString("#.##");
+    string marketChange = Model.CompanyRegularMarketChange.ToString("#.##");
+    string marketVolume = Model.CompanyRegularMarketVolume.ToString("#.##");
+    string marketDayLow = Model.CompanyRegularMarketDayLow.ToString("#.##");
+    string marketDayHigh = Model.CompanyRegularMarketDayHigh.ToString("#.##");
+    string marketBalance = Model.CompanyBalance.ToString("#,##0");
+    string marketIncome = Model.CompanyIncomeStatement.ToString("#,##0");
+    string marketEbitda = Model.CompanyEBITDA.ToString("#,##0");
+    string marketProfit = Model.CompanyProfit.ToString("#,##0");
+    string marketPriceGainRate = Model.CompanyPriceGainRate.ToString("#.##");
+}
 
-    @Html.DisplayFor(ModelItem=>ModelItem.CompanyName)
 
-  
-
-
-<!-- /#wrapper -->
-
-      <style>
+<div class="offcanvas offcanvas-start bg-dark text-white sidebar-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     
-      </style>
+    <div class="offcanvas-body p-0">
+        <nav class="navbar-dark">
+            <ul class="navbar-nav">
+                <hr class="align-content-sm-center" />
+                <li>
+                    <div class="text small fw-bold text-uppercase px-3">@Html.DisplayFor(Model=>Model.CompanyName)</div>
+                    <div class="text small fw-bold text-uppercase px-3">@Html.DisplayFor(modelItem=>marketPrice)</div>
+                    
+                </li>
+                <hr class="dropdown-divider" />
+                <li>
+                    <div class="text-muted small fw-bold text-uppercase px-3">CORE</div>
+                </li>
+                <li>
+                    <a href="" class="nav-link px-3 active">
+                    <span class="me-2">
+                        <i class="bi bi-speedometer"></i>
+                    </span>
+                    <span>Summary</span>
+                    </a>
+                </li>
+                <li class="my-4">
+                    <hr class="dropdown-divider"/>
+                </li>
+                 <li>
+                    <div class="text-muted small fw-bold text-uppercase px-3">TABLES</div>
+                </li>
+                <li>
+                    <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <span class="me-2"><i class="bi bi-bar-chart-line"></i></span>
+                        <span>Graphs</span>
+                        <span class="right-icon ms-auto"><i class="bi bi-chevron-compact-down"></i></span>
+                    </a>
+                    <div class="collapse" id="collapseExample">
+                      <div >
+                        <ul class="navbar-nav ps-3">
+                            <li><a href="#" class="nav-link px-3">
+                                <span class="me-2">
+                                <i class="bi bi-speedometer"></i>
+                                </span>
+                                <span>Graph Name1</span>
+                            </a></li>
+                            <li>
+                                <a href="#" class="nav-link px-3">
+                                <span class="me-2">
+                                <i class="bi bi-speedometer"></i>
+                                </span>
+                                <span>Graph Name2</span>
+                            </a>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                </li>
+                <hr class="dropdown-divider" />
+                <li>
+                    <form autocomplete="off" class="inline w-100" id="searchForm">
+                        <input class="form-control form-control-sm w-75" id="searchId" type="text" placeholder="Search" name="searchString">
+                        <input id="searchButton" class="btn btn-outline-light btn-hover btn-sm search w-25" type="submit" asp-controller="home" asp-action="details" value="Search" />
+                    </form>
+                </li>
+            </ul>
+        </nav>
+        
+    </div>
+</div>
+
+    <div class="main-div mt-5 pt-4 ">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="dashboard-div col-md-12 fw-bold fs-3 text-light">Summary</div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                <div class="card text-bg-warning mb-3" ">
+                  <div class="card-header">Summary</div>
+                  <div class="card-body row">
+                    <div class="col-md-6">
+                         <p class="card-text">Market Price :          @Html.DisplayFor(modelItem=>marketPrice)</p>
+                        <p class="card-text">Market Change Percent :          @Html.DisplayFor(modelItem=>marketChange)%</p>
+                        <p class="card-text">Market Volume :          @Html.DisplayFor(modelItem=>marketVolume)</p>
+                        <p class="card-text">Day Low :          @Html.DisplayFor(modelItem=>marketDayLow)</p>
+                        <p class="card-text">Day High :          @Html.DisplayFor(modelItem=>marketDayHigh)</p>
+                    </div>
+                       <div class="col-md-6">
+                           <p class="card-text">Balance :          @Html.DisplayFor(modelItem=>marketBalance)</p>
+                        <p class="card-text">Revenue :          @Html.DisplayFor(modelItem=>marketIncome)</p>
+                        <p class="card-text">EBITDA :          @Html.DisplayFor(modelItem=>marketEbitda)</p>
+                        <p class="card-text">Profit :          @Html.DisplayFor(modelItem=>marketProfit)</p>
+                        <p class="card-text">Price Gain rate :          @Html.DisplayFor(modelItem=>marketPriceGainRate)</p>
+                       </div>
+                        
+                  </div>
+                </div>
+                </div>
+               
+                 
+            
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Charts</div>
+                    <div class="card-body">
+                        <canvas class="chart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Charts</div>
+                    <div class="card-body">
+                        <canvas id="myChart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-md-6 ">
+            <div class="card">
+                <div class="card-header">Charts</div>
+                <div class="card-body ">
+                    <canvas id="pieChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">Charts</div>
+                <div class="card-body">
+                    <canvas id="lineChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 ">
+            <div class="card">
+                <div class="card-header">Charts</div>
+                <div class="card-body ">
+                    <canvas id="polarChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">Charts</div>
+                <div class="card-body">
+                    <canvas id="polarChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        Data Tables
+                    </div>
+                    <div class="table-responsive">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <style>
+    .main-div {
+        margin-left: var(--offcanvas-width);        
+    }
+    
+        </style>
+
+        @section Scripts{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+
+
+
+    </script>
+}

@@ -14,5 +14,6 @@ namespace DataAccessLayer.Abstract
         List<T> GetListAll();
         T GetById(int id);
         T GetSymbol(string symbol);
+        
     }
 }

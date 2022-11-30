@@ -63,6 +63,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
             }
           },
           "imports": [
@@ -92,7 +96,7 @@
         "projectName": "EntityLayer",
         "projectPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj",
         "packagesPath": "C:\\Users\\yigit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\obj\\",
+        "outputPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yigit\\AppData\\Roaming\\NuGet\\NuGet.Config",

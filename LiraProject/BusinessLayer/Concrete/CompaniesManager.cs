@@ -1,6 +1,7 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete.EntityFramework;
+using EntityLayer.APIClasses;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -40,5 +41,6 @@ namespace BusinessLayer.Concrete
         {
             return _companiesDal.GetSymbol(symbol);
         }
+        
     }
 }

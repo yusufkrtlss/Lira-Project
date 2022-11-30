@@ -179,3 +179,4 @@ C:\Users\yigit\Source\Repos\Lira-Project\LiraProject\LiraProject\obj\Debug\net6.
 C:\Users\yigit\Source\Repos\Lira-Project\LiraProject\LiraProject\obj\Debug\net6.0\LiraProject.pdb
 C:\Users\yigit\Source\Repos\Lira-Project\LiraProject\LiraProject\obj\Debug\net6.0\LiraProject.genruntimeconfig.cache
 C:\Users\yigit\Source\Repos\Lira-Project\LiraProject\LiraProject\obj\Debug\net6.0\ref\LiraProject.dll
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\LiraProject\bin\Debug\net6.0\Newtonsoft.Json.dll

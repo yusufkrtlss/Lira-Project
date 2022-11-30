@@ -1,9 +1,13 @@
-﻿using DataAccessLayer.Abstract;
+﻿using Azure;
+using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete.EntityFramework.Context;
+using EntityLayer.Concrete;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 
 namespace DataAccessLayer.EfRepositories
@@ -47,5 +51,6 @@ namespace DataAccessLayer.EfRepositories
             c.Update(t);
             c.SaveChanges();
         }
+        
     }
 }

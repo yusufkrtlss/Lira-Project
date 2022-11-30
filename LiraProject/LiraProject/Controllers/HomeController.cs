@@ -1,6 +1,7 @@
 ﻿using BusinessLayer.Concrete;
 using DataAccessLayer.Concrete.EntityFramework;
 using DataAccessLayer.Concrete.EntityFramework.Context;
+using EntityLayer.APIClasses;
 using LiraProject.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -12,13 +13,15 @@ namespace LiraProject.Controllers
     public class HomeController : Controller
     {
         CompaniesManager cm = new CompaniesManager(new EfCompaniesRepository());
-
+        QuotesManager qm=new QuotesManager(new EfQuotesRepository());
 
 
         
         public IActionResult Index()
         {
+            Quotes quotes = new Quotes();
             var values = cm.GetAllCompanies();
+            qm.AddCompanyList(quotes);
             return View(values);
         }
 
@@ -58,7 +61,8 @@ namespace LiraProject.Controllers
                         c.CompanySymbol.Contains(term) ||
                         c.CompanyName.Contains(term)
                 );
-            }           
+            }
+            
             var companies = query.Select(c=>c.CompanySymbol).ToList();
 
            return Json(companies);
