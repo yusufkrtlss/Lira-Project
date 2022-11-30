@@ -10,7 +10,6 @@ namespace EntityLayer.Concrete
 {
     public class Customer
     {
-        [Key]
         public int CustomerId { get; set; }
         public string CustomerFirstName { get; set; }
         public string CustomerLastName { get; set; }

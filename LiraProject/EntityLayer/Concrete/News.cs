@@ -9,7 +9,6 @@ namespace EntityLayer.Concrete
 {
     public class News
     {
-        [Key]
         public int NewsId { get; set; }
         public string NewsName { get; set; }
         public string NewsTitle { get; set; }

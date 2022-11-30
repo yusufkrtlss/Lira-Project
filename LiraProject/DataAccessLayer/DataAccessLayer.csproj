@@ -9,13 +9,10 @@
   <ItemGroup>
     <Compile Remove="Abstract\**" />
     <Compile Remove="Concrete\EntityFramework\EfRepositories\**" />
-    <Compile Remove="Concrete\EntityFramework\Mapping\**" />
     <EmbeddedResource Remove="Abstract\**" />
     <EmbeddedResource Remove="Concrete\EntityFramework\EfRepositories\**" />
-    <EmbeddedResource Remove="Concrete\EntityFramework\Mapping\**" />
     <None Remove="Abstract\**" />
     <None Remove="Concrete\EntityFramework\EfRepositories\**" />
-    <None Remove="Concrete\EntityFramework\Mapping\**" />
   </ItemGroup>
 
   <ItemGroup>

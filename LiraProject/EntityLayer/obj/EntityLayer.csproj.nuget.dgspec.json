@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Monster\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj": {}
+    "C:\\Users\\Monster\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Monster\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj": {
+    "C:\\Users\\Monster\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Monster\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Monster\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "C:\\Users\\Monster\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj",
+        "projectPath": "C:\\Users\\Monster\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj",
         "packagesPath": "C:\\Users\\Monster\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Monster\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",

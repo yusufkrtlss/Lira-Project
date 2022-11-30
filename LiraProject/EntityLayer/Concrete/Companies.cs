@@ -9,7 +9,6 @@ namespace EntityLayer.Concrete
 {
     public class Companies
     {
-        [Key]
         public int CompanyId { get; set; }
         public string CompanyName { get; set; }
         public string CompanySymbol { get; set; }
