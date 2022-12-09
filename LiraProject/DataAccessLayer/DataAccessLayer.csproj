@@ -7,11 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Abstract\**" />
     <Compile Remove="Concrete\EntityFramework\EfRepositories\**" />
-    <EmbeddedResource Remove="Abstract\**" />
     <EmbeddedResource Remove="Concrete\EntityFramework\EfRepositories\**" />
-    <None Remove="Abstract\**" />
     <None Remove="Concrete\EntityFramework\EfRepositories\**" />
   </ItemGroup>
 
@@ -26,6 +23,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
 
   <ItemGroup>
