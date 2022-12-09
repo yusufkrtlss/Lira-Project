@@ -10,3 +10,15 @@ C:\Users\Monster\source\repos\LiraProject\EntityLayer\obj\Debug\net6.0\EntityLay
 C:\Users\Monster\source\repos\LiraProject\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
 C:\Users\Monster\source\repos\LiraProject\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
 C:\Users\Monster\source\repos\LiraProject\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll
+C:\Users\Monster\source\repos\Lira-Project\LiraProject\EntityLayer\bin\Debug\net6.0\EntityLayer.deps.json
+C:\Users\Monster\source\repos\Lira-Project\LiraProject\EntityLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\Monster\source\repos\Lira-Project\LiraProject\EntityLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\Monster\source\repos\Lira-Project\LiraProject\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\Monster\source\repos\Lira-Project\LiraProject\EntityLayer\obj\Debug\net6.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Monster\source\repos\Lira-Project\LiraProject\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\Monster\source\repos\Lira-Project\LiraProject\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfo.cs
+C:\Users\Monster\source\repos\Lira-Project\LiraProject\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\Monster\source\repos\Lira-Project\LiraProject\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
+C:\Users\Monster\source\repos\Lira-Project\LiraProject\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
+C:\Users\Monster\source\repos\Lira-Project\LiraProject\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
+C:\Users\Monster\source\repos\Lira-Project\LiraProject\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll
