@@ -13,7 +13,22 @@ namespace DataAccessLayer.Concrete.EntityFramework.Mapping
     {
         public void Configure(EntityTypeBuilder<Customer> builder)
         {
-            throw new NotImplementedException();
+            builder.HasKey(x => x.CustomerId);
+            builder.Property(x => x.CustomerId).ValueGeneratedOnAdd();
+            builder.Property(x => x.CustomerEmail).IsRequired();
+            builder.Property(x => x.CustomerEmail).HasMaxLength(50);
+            builder.HasIndex(x => x.CustomerEmail).IsUnique();
+            builder.Property(x => x.CustomerFirstName).IsRequired();
+            builder.Property(x => x.CustomerFirstName).HasMaxLength(100);
+            builder.Property(x => x.CustomerLastName).IsRequired();
+            builder.Property(x => x.CustomerLastName).HasMaxLength(100);
+            builder.Property(x => x.CustomerPassword).IsRequired();
+            builder.Property(x => x.CustomerPassword).HasMaxLength(20);
+            builder.Property(x => x.CustomerPhone).IsRequired();
+            builder.Property(x => x.CustomerPhone).HasMaxLength(15);
+            builder.Property(x => x.CustomerCreatedTime).IsRequired();
+            builder.Property(x => x.CustomerModifiedTime).IsRequired();
+            builder.ToTable("Customer");
         }
     }
 }
