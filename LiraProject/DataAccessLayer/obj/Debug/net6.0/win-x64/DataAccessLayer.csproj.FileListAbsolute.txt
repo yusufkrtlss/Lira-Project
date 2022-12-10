@@ -1,0 +1,17 @@
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\bin\Debug\net6.0\win-x64\DataAccessLayer.deps.json
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\bin\Debug\net6.0\win-x64\DataAccessLayer.runtimeconfig.json
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\bin\Debug\net6.0\win-x64\DataAccessLayer.dll
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\bin\Debug\net6.0\win-x64\DataAccessLayer.pdb
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\bin\Debug\net6.0\win-x64\EntityLayer.dll
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\bin\Debug\net6.0\win-x64\EntityLayer.pdb
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\obj\Debug\net6.0\win-x64\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\obj\Debug\net6.0\win-x64\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\obj\Debug\net6.0\win-x64\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\obj\Debug\net6.0\win-x64\DataAccessLayer.AssemblyInfo.cs
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\obj\Debug\net6.0\win-x64\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\obj\Debug\net6.0\win-x64\DataAccessLayer.csproj.CopyComplete
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\obj\Debug\net6.0\win-x64\DataAccessLayer.dll
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\obj\Debug\net6.0\win-x64\refint\DataAccessLayer.dll
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\obj\Debug\net6.0\win-x64\DataAccessLayer.pdb
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\obj\Debug\net6.0\win-x64\DataAccessLayer.genruntimeconfig.cache
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\obj\Debug\net6.0\win-x64\ref\DataAccessLayer.dll

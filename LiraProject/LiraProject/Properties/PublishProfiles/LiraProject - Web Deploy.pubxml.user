@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJIZ8o1NlVkCMyHtc7SjDpwAAAAACAAAAAAAQZgAAAAEAACAAAABCYs4QS0CuvfY3y9wD2hqw7/XU+IhyMJM22QUD32jqAgAAAAAOgAAAAAIAACAAAAB02v5vz5JbHC/PSJws8Z/hPJN4Rkhgw0nhJWkRcCc3KIAAAADRyjJHh2xZi5lawUkTtXTSfY/5TBF6M8IlfRIGZwxVh/p/lafclGSxjnxSflz2+R2BN5XbshJPU0sxADbJ8Ew3JH1bggR5nalSmGerYT16hGS2kqAbcIqXINGK40qobvY9b9g11qk9eFzmmSmN4CxiaPwJ0KAZgTptgvtPp70iYkAAAAB5rA2RhkqAChQyVAgxcIQs6kXJ5iHX9pJssdJCa+SicIzs5rvJF/MeZgfg/64OvmIZElxY+j0oFky5Gl6IXcw/</EncryptedPassword>
+    <History>True|2022-12-09T22:35:12.2299187Z;True|2022-12-10T01:32:03.7716516+03:00;False|2022-12-10T01:26:32.3397395+03:00;True|2022-12-09T22:36:11.8871233+03:00;True|2022-12-09T22:24:39.5189297+03:00;True|2022-12-09T22:07:47.1836998+03:00;True|2022-12-09T22:03:35.5421686+03:00;True|2022-12-09T21:56:32.9861878+03:00;True|2022-12-09T21:44:27.7279091+03:00;True|2022-12-09T21:43:34.5595660+03:00;True|2022-12-09T21:39:43.6671047+03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="LiraConnString">
+      <Value>Server=lirainvestmentserver.database.windows.net%3binitial catalog=LiraOfInvestment_DB%3bUser Id=lirasinvestment%3bPassword=Lira2022%3bencrypt=false</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

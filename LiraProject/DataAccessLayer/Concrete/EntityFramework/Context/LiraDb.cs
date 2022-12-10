@@ -19,7 +19,7 @@ namespace DataAccessLayer.Concrete.EntityFramework.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=lirainvestmentserver.database.windows.net;initial catalog=LiraOfInvestment_DB;User Id=Lira_yusuf;Password=Investment.2022;encrypt=false");
+            optionsBuilder.UseSqlServer(@"Server=tcp:lirainvestmentserver.database.windows.net,1433;Initial Catalog=LiraOfInvestment_DB;Persist Security Info=False;User ID=lirainvestment;Password=Lira2022;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         }
     }
 }

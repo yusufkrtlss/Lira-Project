@@ -1,0 +1,77 @@
+﻿@model EntityLayer.Concrete.Customer
+
+@{
+    ViewData["Title"] = "Sign In";
+}
+
+<h1>Sign In</h1>
+
+<h4>Customer</h4>
+<hr />
+
+<body>
+    <div class="d-flex justify-content-center row text-light">
+        <div class=" col-md-6">
+        <form asp-action="SignIn">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="row mb-3 form-group">
+                    <label asp-for="CustomerFirstName" class="col-sm-2 col-form-label">First Name</label>
+                    <div class="col-sm-10 ">
+                    <input asp-for="CustomerFirstName" class="form-control" />
+                    <span asp-validation-for="CustomerFirstName" class="text-danger"></span>
+                    </div>
+            </div>
+                <div class="row mb-3 form-group">
+                    <label asp-for="CustomerLastName" class="col-sm-2 col-form-label">Last Name</label>
+                    <div class="col-sm-10 ">
+                <input asp-for="CustomerLastName" class="form-control" />
+                <span asp-validation-for="CustomerLastName" class="text-danger"></span>
+                </div>
+            </div>
+                <div class="row mb-3 form-group">
+                    <label asp-for="CustomerEmail" class="col-sm-2 col-form-label">E-Mail</label>
+                <div class="col-sm-10 ">
+                <input asp-for="CustomerEmail" class="form-control" />
+                <span asp-validation-for="CustomerEmail" class="text-danger"></span>
+                    </div>
+            </div>
+                <div class="row mb-3 form-group">
+                    <label asp-for="CustomerPhone" class="col-sm-2 col-form-label">Phone</label>
+                    <div class="col-sm-10 ">
+                <input asp-for="CustomerPhone" class="form-control" />
+                <span asp-validation-for="CustomerPhone" class="text-danger"></span>
+                    </div>
+            </div>
+                <div class="row mb-3 form-group">
+                    <label asp-for="CustomerPassword" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10 ">
+                        <input asp-for="CustomerPassword" class="form-control" />
+                        <span asp-validation-for="CustomerPassword" class="text-danger"></span>
+                    </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerCreatedTime" class="control-label"></label>
+                <input asp-for="CustomerCreatedTime" class="form-control" />
+                <span asp-validation-for="CustomerCreatedTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerModifiedTime" class="control-label"></label>
+                <input asp-for="CustomerModifiedTime" class="form-control" />
+                <span asp-validation-for="CustomerModifiedTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+            <div>
+                <a asp-action="Index">Back to List</a>
+            </div>
+    </div>
+        
+</div>
+</body>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

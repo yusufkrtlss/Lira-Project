@@ -1,0 +1,12 @@
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\CoreLayer\bin\Debug\net6.0\win-x64\CoreLayer.deps.json
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\CoreLayer\bin\Debug\net6.0\win-x64\CoreLayer.dll
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\CoreLayer\bin\Debug\net6.0\win-x64\CoreLayer.pdb
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\win-x64\CoreLayer.csproj.AssemblyReference.cache
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\win-x64\CoreLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\win-x64\CoreLayer.AssemblyInfoInputs.cache
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\win-x64\CoreLayer.AssemblyInfo.cs
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\win-x64\CoreLayer.csproj.CoreCompileInputs.cache
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\win-x64\CoreLayer.dll
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\win-x64\refint\CoreLayer.dll
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\win-x64\CoreLayer.pdb
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\win-x64\ref\CoreLayer.dll

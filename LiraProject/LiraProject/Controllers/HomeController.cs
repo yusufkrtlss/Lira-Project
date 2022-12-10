@@ -42,9 +42,16 @@ namespace LiraProject.Controllers
             return View(stocks);
         }
 
-        
-       
-        
+        public IActionResult SignIn()
+        {
+            return View();
+        }
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+
         [Produces("application/json")]
         [HttpGet("search")]
         [Route("/home/search")]

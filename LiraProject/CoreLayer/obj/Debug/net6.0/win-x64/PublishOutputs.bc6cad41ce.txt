@@ -1,0 +1,3 @@
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\CoreLayer\bin\Debug\net6.0\win-x64\publish\CoreLayer.dll
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\CoreLayer\bin\Debug\net6.0\win-x64\publish\CoreLayer.deps.json
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\CoreLayer\bin\Debug\net6.0\win-x64\publish\CoreLayer.pdb

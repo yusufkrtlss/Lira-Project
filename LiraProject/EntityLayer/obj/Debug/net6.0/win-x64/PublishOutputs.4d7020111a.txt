@@ -1,0 +1,3 @@
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\EntityLayer\bin\Debug\net6.0\win-x64\publish\EntityLayer.dll
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\EntityLayer\bin\Debug\net6.0\win-x64\publish\EntityLayer.deps.json
+C:\Users\yigit\source\repos\Lira-Project\LiraProject\EntityLayer\bin\Debug\net6.0\win-x64\publish\EntityLayer.pdb
