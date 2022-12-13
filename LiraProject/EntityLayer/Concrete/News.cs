@@ -9,10 +9,12 @@ namespace EntityLayer.Concrete
 {
     public class News
     {
+        [Key]
         public int NewsId { get; set; }
         public string NewsName { get; set; }
         public string NewsTitle { get; set; }
         public string NewsInformation { get; set; }
         public DateTime NewsCreatedDate { get; set; }
+        public Companies Companies { get; set; }
     }
 }

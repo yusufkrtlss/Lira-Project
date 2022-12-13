@@ -28,5 +28,6 @@ namespace EntityLayer.Concrete
         public string CompanyInformation { get; set; }
         public ICollection<Share> Shares { get; set; }
         public ICollection<Graphs> Graphs { get; set; }
+        public ICollection<News> News { get; set; }
     }
 }

@@ -49,3 +49,5 @@ C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\obj\Debug\n
 C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
 C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
 C:\Users\yigit\source\repos\Lira-Project\LiraProject\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll
+C:\Users\Monster\Source\Repos\Lira-Project\LiraProject\DataAccessLayer\bin\Debug\net6.0\CoreLayer.dll
+C:\Users\Monster\Source\Repos\Lira-Project\LiraProject\DataAccessLayer\bin\Debug\net6.0\CoreLayer.pdb

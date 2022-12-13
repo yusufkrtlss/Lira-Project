@@ -9,6 +9,7 @@ namespace EntityLayer.Concrete
 {
     public class Share
     {
+        [Key]
         public int ShareId { get; set; }
         public string ShareName { get; set; }
         public float SharePrice { get; set; }

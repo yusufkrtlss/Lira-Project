@@ -30,11 +30,14 @@ namespace DataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CompanyId"));
 
-                    b.Property<float>("CompanyBalance")
-                        .HasColumnType("real");
+                    b.Property<double>("CompanyBalance")
+                        .HasColumnType("float");
 
-                    b.Property<float>("CompanyIncomeStatement")
-                        .HasColumnType("real");
+                    b.Property<double>("CompanyEBITDA")
+                        .HasColumnType("float");
+
+                    b.Property<double>("CompanyIncomeStatement")
+                        .HasColumnType("float");
 
                     b.Property<string>("CompanyInformation")
                         .IsRequired()
@@ -44,11 +47,29 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float>("CompanyPriceGainRate")
-                        .HasColumnType("real");
+                    b.Property<double>("CompanyPriceGainRate")
+                        .HasColumnType("float");
 
-                    b.Property<float>("CompanyProfit")
-                        .HasColumnType("real");
+                    b.Property<double>("CompanyProfit")
+                        .HasColumnType("float");
+
+                    b.Property<double>("CompanyRegularMarketChange")
+                        .HasColumnType("float");
+
+                    b.Property<double>("CompanyRegularMarketChangePercent")
+                        .HasColumnType("float");
+
+                    b.Property<double>("CompanyRegularMarketDayHigh")
+                        .HasColumnType("float");
+
+                    b.Property<double>("CompanyRegularMarketDayLow")
+                        .HasColumnType("float");
+
+                    b.Property<double>("CompanyRegularMarketPrice")
+                        .HasColumnType("float");
+
+                    b.Property<double>("CompanyRegularMarketVolume")
+                        .HasColumnType("float");
 
                     b.Property<string>("CompanySymbol")
                         .IsRequired()
@@ -93,6 +114,9 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("CustomerStatus")
+                        .HasColumnType("bit");
+
                     b.HasKey("CustomerId");
 
                     b.ToTable("Customers");
@@ -128,6 +152,9 @@ namespace DataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("NewsId"));
 
+                    b.Property<int>("CompaniesCompanyId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("NewsCreatedDate")
                         .HasColumnType("datetime2");
 
@@ -144,6 +171,8 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("NewsId");
+
+                    b.HasIndex("CompaniesCompanyId");
 
                     b.ToTable("News");
                 });
@@ -191,6 +220,17 @@ namespace DataAccessLayer.Migrations
                     b.Navigation("Company");
                 });
 
+            modelBuilder.Entity("EntityLayer.Concrete.News", b =>
+                {
+                    b.HasOne("EntityLayer.Concrete.Companies", "Companies")
+                        .WithMany("News")
+                        .HasForeignKey("CompaniesCompanyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Companies");
+                });
+
             modelBuilder.Entity("EntityLayer.Concrete.Share", b =>
                 {
                     b.HasOne("EntityLayer.Concrete.Companies", "Company")
@@ -205,6 +245,8 @@ namespace DataAccessLayer.Migrations
             modelBuilder.Entity("EntityLayer.Concrete.Companies", b =>
                 {
                     b.Navigation("Graphs");
+
+                    b.Navigation("News");
 
                     b.Navigation("Shares");
                 });

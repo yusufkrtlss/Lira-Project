@@ -22,6 +22,7 @@ namespace DataAccessLayer.Concrete.EntityFramework.Mapping
             builder.Property(x => x.NewsInformation).IsRequired();
             builder.Property(x => x.NewsInformation).HasMaxLength(500);
             builder.Property(x => x.NewsCreatedDate).IsRequired();
+            builder.HasOne<Companies>(s => s.Companies).WithMany(s => s.News).HasForeignKey(s => s.Companies.CompanyId);
             builder.ToTable("News");
         }
     }
