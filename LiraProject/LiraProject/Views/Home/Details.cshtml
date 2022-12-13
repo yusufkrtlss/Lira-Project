@@ -33,11 +33,28 @@
                     <div class="text-muted small fw-bold text-uppercase px-3">CORE</div>
                 </li>
                 <li>
-                    <a href="" class="nav-link px-3 active">
+                    <a href="" class="nav-link px-3 active" onclick="getSummary(@Model.CompanyId)">
                     <span class="me-2">
                         <i class="bi bi-speedometer"></i>
                     </span>
                     <span>Summary</span>
+                    </a>
+                </li>
+                 <li>
+                    <a id="btnSummary" href="#" class="nav-link px-3" onclick="getCompInfo(@Model.CompanyId)">
+                        <span class="me-2">
+                            <i class="bi bi-speedometer"></i>
+                        </span>
+                        <span>Company Information</span>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a id="btnCompare" href="#" class="nav-link px-3">
+                        <span class="me-2">
+                            <i class="bi bi-speedometer"></i>
+                        </span>
+                        <span>Compare</span>
                     </a>
                 </li>
                 <li class="my-4">
@@ -45,6 +62,14 @@
                 </li>
                  <li>
                     <div class="text-muted small fw-bold text-uppercase px-3">TABLES</div>
+                </li>
+                <li>
+                    <a href="" class="nav-link px-3">
+                        <span class="me-2">
+                            <i class="bi bi-speedometer"></i>
+                        </span>
+                        <span>Tables</span>
+                    </a>
                 </li>
                 <li>
                     <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -55,7 +80,8 @@
                     <div class="collapse" id="collapseExample">
                       <div >
                         <ul class="navbar-nav ps-3">
-                            <li><a href="#" class="nav-link px-3">
+                                <li>
+                                    <a asp-controller="home" asp-action="graph1" class="nav-link px-3">
                                 <span class="me-2">
                                 <i class="bi bi-speedometer"></i>
                                 </span>
