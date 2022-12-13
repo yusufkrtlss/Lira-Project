@@ -80,6 +80,25 @@
                         <input id="searchButton" class="btn btn-outline-light btn-hover btn-sm search w-25" type="submit" asp-controller="home" asp-action="details" value="Search" />
                     </form>
                 </li>
+                <br />
+                <br />
+                <hr class="dropdown-divider" />
+                <li>
+                    <a href="" class="nav-link px-3">
+                        <span class="me-2">
+                            <i class="bi bi-speedometer"></i>
+                        </span>
+                        <span>Radar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="nav-link px-3">
+                        <span class="me-2">
+                            <i class="bi bi-speedometer"></i>
+                        </span>
+                        <span>Ratio Analysis</span>
+                    </a>
+                </li>
             </ul>
         </nav>
         
@@ -93,14 +112,57 @@
     .main-div {
         margin-left: var(--offcanvas-width);        
     }
+    .sidebar-nav{
     
+max-width: 20%;
+
+bottom:0;
+    }
         </style>
 
         @section Scripts{
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
+        var getSummary = function (companyId) {
 
+
+            $.ajax({
+                type: "POST",
+                url: "/Home/Summary",
+                data: { id: companyId },
+                success: function (response) {
+                    $("#myPartial").html(response);
+                    $("#myPartial").show();
+                }
+
+            });
+        }
+        var getCompInfo = function (companyId) {
+
+
+            $.ajax({
+                type: "POST",
+                url: "/Home/CompanyInfo",
+                data: { id: companyId },
+                success: function (response) {
+                    $("#myPartial").html(response);
+                    $("#myPartial").show();
+                }
+
+            });
+        }
+
+
+        $(document).ready(function () {
+            var url = window.location;
+            $('.navbar .nav').find('.active').removeClass('active');
+            $('.navbar .nav li a').each(function () {
+                if (this.href == url) {
+                    $(this).parent().addClass('active');
+                }
+            });
+        });
 
 
     </script>

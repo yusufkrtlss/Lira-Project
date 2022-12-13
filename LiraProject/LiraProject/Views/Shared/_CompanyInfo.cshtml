@@ -1,0 +1,17 @@
+﻿
+@using EntityLayer.Concrete
+@model Companies
+
+
+
+<h2 class="text-warning">Information of @Html.DisplayFor(ModelItem=>ModelItem.CompanyName)</h2>
+<p class="text-light">Amarin Corporation plc, a pharmaceutical company, engages in the development and commercialization of therapeutics 
+    for the treatment of cardiovascular diseases in the United States. Its lead product is VASCEPA, a prescription-only
+    omega-3 fatty acid product, used as an adjunct to diet for reducing triglyceride levels in adult patients with severe 
+    hypertriglyceridemia. The company sells its products principally to wholesalers and specialty pharmacy providers. It 
+    has a collaboration with Mochida Pharmaceutical Co., Ltd. to develop and commercialize drug products and indications 
+    based on the active pharmaceutical ingredient in Vascepa, the omega-3 acid, and eicosapentaenoic acid. The company was
+    formerly known as Ethical Holdings plc and changed its name to Amarin Corporation plc in 1999. Amarin Corporation plc 
+    was incorporated in 1989 and is headquartered in Dublin, Ireland.</p>
+
+    <p class="text-light">@Html.DisplayFor(ModelItem=>ModelItem.CompanyInformation)</p>
