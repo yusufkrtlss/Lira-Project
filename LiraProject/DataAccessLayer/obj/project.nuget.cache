@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PAPDc+ZhSmIoVkwgck5MH1cUxuf+mvsxMITO+/jwXuoshqkMS0fKQ3g57w35Zr+h539HQdQ7B1+rHXSd/80tBA==",
+  "dgSpecHash": "PfmOtG4AVPY6Ch38XYJd7q/b41atrymcp9p6D31mYm7qpy/WcpVAgUR82x1MKFBM7Q1mpNBQ3xqj9cdrCKpp0A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj",
+  "projectFilePath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yigit\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\yigit\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

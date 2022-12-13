@@ -22,25 +22,7 @@
 </head>
 <body>
    
-           @*<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3 fixed-top">
-              <a class="navbar-brand" href="#">Lira Of Investment</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-item nav-link active" href="#">Home</a>
-                  <a class="nav-item nav-link" href="#">Contact</a>
-                  <a class="nav-item nav-link" href="#">Pricing</a>
-                  
-                </div>
            
-              </div>
-                    <div class="navbar-nav">
-                  <a class="nav-item nav-link" href="#">Login</a>
-                  <a class="nav-item nav-link" href="#">SignUp</a>
-                  </div>
-            </nav>*@
 
     
             <div class="card">
@@ -55,13 +37,13 @@
                             <div class="first">
                                 <ul class="navbar-nav ms-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="#">Home</a>
+                                <a class="nav-link active" asp-controller="home" asp-action="index">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" asp-controller="home" asp-action="contact">Contact</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Member Plans</a>
+                                <a class="nav-link" asp-controller="Home" asp-action="MemberPlan">Member Plans</a>
                                     </li>
                                 </ul>
                             </div>

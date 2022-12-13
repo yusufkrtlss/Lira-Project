@@ -42,6 +42,29 @@ namespace LiraProject.Controllers
             return View(stocks);
         }
 
+        public ActionResult Summary(int id)
+        {
+            var stock = cm.GetById(id);
+            return PartialView("_Summary", stock);
+        }
+
+        public ActionResult CompanyInfo(int id)
+        {
+            var stock = cm.GetById(id);
+            return PartialView("_CompanyInfo", stock);
+        }
+
+        public ActionResult Graph1(int id)
+        {
+            var stock = cm.GetById(id);
+            return View("Graph1", stock);
+        }
+
+        public IActionResult MemberPlan()
+        {
+            return View();
+        }
+
         public IActionResult SignIn()
         {
             return View();
