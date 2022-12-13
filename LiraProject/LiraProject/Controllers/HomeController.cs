@@ -27,12 +27,12 @@ namespace LiraProject.Controllers
 
         [HttpGet]
         [Route("/home/details")]
-        public IActionResult Details(string searchString)
+        public IActionResult Details(string symbol)
         {
             var query = cm.GetAllCompanies().AsQueryable();
-            if (!string.IsNullOrEmpty(searchString))
+            if (!string.IsNullOrEmpty(symbol))
             {
-                query = query.Where(c => c.CompanySymbol == searchString);
+                query = query.Where(c => c.CompanySymbol == symbol);
                 
             }
             int id = query.Select(c => c.CompanyId).FirstOrDefault();

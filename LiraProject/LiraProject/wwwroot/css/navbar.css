@@ -5,14 +5,14 @@
     font-family: 'Poppins', sans-serif
 }
 
-.card {
+/*.card {
     display: flex;
-}
+}*/
 
-    .card .navbar .navbar-brand {
-        color: #e60707;
-        font-weight: 600;
-    }
+.card .navbar .navbar-brand {
+    color: #e60707;
+    font-weight: 600;
+}
 
 .first {
     width: 39%;
@@ -61,38 +61,38 @@
         border-bottom: 2px solid #e60707;
     }
 
-.card-body {
+/* .card-body {
     min-height: 400px;
-    */ background-color: red;
+     background-color: red; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
+}*/
+
+.card-body .btn.btn-primary {
+    margin-top: 2rem;
+    background-color: #e60707;
+    color: #fff;
+    width: 120px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 20px;
+    transition: .5s;
 }
 
-    .card-body .btn.btn-primary {
-        margin-top: 2rem;
-        background-color: #e60707;
-        color: #fff;
-        width: 120px;
-        height: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid #ddd;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 20px;
-        transition: .5s;
+    .card-body .btn.btn-primary:hover {
+        color: #e60707;
+        background-color: #fff;
+        border: 2px solid #e60707;
     }
-
-        .card-body .btn.btn-primary:hover {
-            color: #e60707;
-            background-color: #fff;
-            border: 2px solid #e60707;
-        }
 
 .card-footer {
     background-color: #fff;

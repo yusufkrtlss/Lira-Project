@@ -45,7 +45,7 @@ charts.forEach(function (chart) {
     var myChart = new Chart(ctx, {
         type: "bar",
         data: {
-            labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+            labels: ["2021/9", "2021/12", "2022/3", "2022/6", "2022/9", "2022/12"],
             datasets: [
                 {
                     label: "# of Votes",
