@@ -25,39 +25,9 @@ namespace LiraProject.Controllers
             return View(values);
         }
 
-        [HttpGet]
-        [Route("/home/details")]
-        public IActionResult Details(string symbol)
+        public IActionResult Payment()
         {
-            var query = cm.GetAllCompanies().AsQueryable();
-            if (!string.IsNullOrEmpty(symbol))
-            {
-                query = query.Where(c => c.CompanySymbol == symbol);
-                
-            }
-            int id = query.Select(c => c.CompanyId).FirstOrDefault();
-
-            var stocks = cm.GetById(id);
-            
-            return View(stocks);
-        }
-
-        public ActionResult Summary(int id)
-        {
-            var stock = cm.GetById(id);
-            return PartialView("_Summary", stock);
-        }
-
-        public ActionResult CompanyInfo(int id)
-        {
-            var stock = cm.GetById(id);
-            return PartialView("_CompanyInfo", stock);
-        }
-
-        public ActionResult Graph1(int id)
-        {
-            var stock = cm.GetById(id);
-            return View("Graph1", stock);
+            return View();
         }
 
         public IActionResult MemberPlan()

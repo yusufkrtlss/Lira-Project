@@ -32,36 +32,60 @@
                 <li>
                     <div class="text-muted small fw-bold text-uppercase px-3">CORE</div>
                 </li>
-                <li>
-                    <a href="#Summary" class="nav-link px-3 active" onclick="getSummary(@Model.CompanyId)">
-                    <span class="me-2">
-                        <i class="bi bi-speedometer"></i>
-                    </span>
-                    <span>Summary</span>
-                    </a>
-                </li>
-                 <li>
-                    <a id="btnSummary" href="#" class="nav-link px-3" onclick="getCompInfo(@Model.CompanyId)">
+                <li class="nav-link px-3 ">
                         <span class="me-2">
                             <i class="bi bi-speedometer"></i>
                         </span>
-                        <span>Company Information</span>
                         
-                    </a>
+                        @Html.ActionLink(
+                        "Summary",
+                        "Details", // controller action
+                        "Company", // controller
+                        new { Model.CompanyId },
+                        new{@class="text-decoration-none text-secondary "}
+                        // action parameters aka route values as required
+                        ) 
+                  
                 </li>
-                <li>
-                    <a id="btnCompare" href="#" class="nav-link px-3">
+                
+                        
+                      
+                 <li class="nav-link px-3 ">
                         <span class="me-2">
                             <i class="bi bi-speedometer"></i>
                         </span>
-                        <span>Compare</span>
-                    </a>
+                        
+                        @Html.ActionLink(
+                        "Company Information",
+                        "CompanyInfo", // controller action
+                        "Company", // controller
+                        new { Model.CompanyId },
+                        new{@class="text-decoration-none text-secondary "}
+                        // action parameters aka route values as required
+                        ) 
+                  
+                </li>
+                    
+                 <li class="nav-link px-3 ">
+                        <span class="me-2">
+                            <i class="bi bi-speedometer"></i>
+                        </span>
+                        
+                        @Html.ActionLink(
+                        "Compare",
+                        "Compare", // controller action
+                        "Company", // controller
+                        new { Model.CompanyId },
+                        new{@class="text-decoration-none text-secondary "}
+                        // action parameters aka route values as required
+                        ) 
+                  
                 </li>
                 <li class="my-4">
                     <hr class="dropdown-divider"/>
                 </li>
                  <li>
-                    <div class="text-muted small fw-bold text-uppercase px-3">TABLES</div>
+                    <div class="text-muted small fw-bold text-uppercase px-3">Analyze</div>
                 </li>
                 <li>
                     <a href="" class="nav-link px-3">
@@ -132,7 +156,49 @@
 </div>
 <div class=" pt-5" id="myPartial"></div>
     
+<div class="container-fluid">
+        <div class="row">
+            <div class="dashboard-div col-md-12 fw-bold fs-3 text-light">Summary</div>
+        </div>
+        <div class="row ">
+            <div class="col-md-12">
+                <div class="card mb-3" ">
+                    <div class="card-header">Summary</div>
+                    <div class="card-body row ">
+                        <div class="col-md-6">
 
+                            <p class="card-text">Market Price :          @Html.DisplayFor(modelItem=>marketPrice)</p>
+                            <p class="card-text">Market Change Percent :          @Html.DisplayFor(modelItem=>marketChange)%</p>
+                            <p class="card-text">Market Volume :          @Html.DisplayFor(modelItem=>marketVolume)</p>
+                            <p class="card-text">Day Low :          @Html.DisplayFor(modelItem=>marketDayLow)</p>
+                            <p class="card-text">Day High :          @Html.DisplayFor(modelItem=>marketDayHigh)</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="card-text">Balance :          @Html.DisplayFor(modelItem=>marketBalance)</p>
+                            <p class="card-text">Revenue :          @Html.DisplayFor(modelItem=>marketIncome)</p>
+                            <p class="card-text">EBITDA :          @Html.DisplayFor(modelItem=>marketEbitda)</p>
+                            <p class="card-text">Profit :          @Html.DisplayFor(modelItem=>marketProfit)</p>
+                            <p class="card-text">Price Gain rate :          @Html.DisplayFor(modelItem=>marketPriceGainRate)</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="card border-warning mb-3 pt-2" id="newsId">
+  <div class="card-body">
+    <h5 class="card-title text-bold">Apple plans to let rival app stores on iPhones in EU -Bloomberg</h5>
+    <hr>
+    <p class="card-text">(Reuters) -Apple Inc is preparing to allow alternative app stores on its iPhones and iPads in the European Union as soon as late next year to comply with a new European competition...</p>
+    <a href="#" class="btn btn-warning btn-sm">Read More</a>
+  </div>
+</div>
+
+    </div>
 
         <style>
     .main-div {
@@ -150,12 +216,16 @@ bottom:0;
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
+      
+      
+
+
         var getSummary = function (companyId) {
 
 
             $.ajax({
                 type: "POST",
-                url: "/Home/Summary",
+                url: "/company/Summary",
                 data: { id: companyId },
                 success: function (response) {
                     $("#myPartial").html(response);
@@ -164,20 +234,20 @@ bottom:0;
 
             });
         }
-        var getCompInfo = function (companyId) {
+        //var getCompInfo = function (companyId) {
 
 
-            $.ajax({
-                type: "POST",
-                url: "/Home/CompanyInfo",
-                data: { id: companyId },
-                success: function (response) {
-                    $("#myPartial").html(response);
-                    $("#myPartial").show();
-                }
+        //    $.ajax({
+        //        type: "POST",
+        //        url: "/company/CompanyInfo",
+        //        data: { id: companyId },
+        //        success: function (response) {
+        //            $("#myPartial").html(response);
+        //            $("#myPartial").show();
+        //        }
 
-            });
-        }
+        //    });
+        //}
 
 
         $(document).ready(function () {
@@ -190,6 +260,11 @@ bottom:0;
             });
         });
 
-
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+          get: (searchParams, prop) => searchParams.get(prop),
+        });
+        // Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
+        let value = params.symbol; // "some_value"
+        
     </script>
 }

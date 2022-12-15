@@ -1,0 +1,168 @@
+﻿@using EntityLayer.Concrete
+@model Companies
+@{
+    ViewData["Title"] = "CompanyInfo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string marketPrice = Model.CompanyRegularMarketPrice.ToString("#.##");
+    string marketChange = Model.CompanyRegularMarketChange.ToString("#.##");
+    string marketVolume = Model.CompanyRegularMarketVolume.ToString("#.##");
+    string marketDayLow = Model.CompanyRegularMarketDayLow.ToString("#.##");
+    string marketDayHigh = Model.CompanyRegularMarketDayHigh.ToString("#.##");
+    string marketBalance = Model.CompanyBalance.ToString("#,##0");
+    string marketIncome = Model.CompanyIncomeStatement.ToString("#,##0");
+    string marketEbitda = Model.CompanyEBITDA.ToString("#,##0");
+    string marketProfit = Model.CompanyProfit.ToString("#,##0");
+    string marketPriceGainRate = Model.CompanyPriceGainRate.ToString("#.##");
+}
+
+
+<div class="offcanvas offcanvas-start bg-dark text-light sidebar-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    
+    <div class="offcanvas-body p-0">
+        <nav class="navbar-dark">
+            <ul class="navbar-nav">
+                <hr class="align-content-sm-center" />
+                <li>
+                    <div class="text small fw-bold text-uppercase px-3">@Html.DisplayFor(Model=>Model.CompanyName)</div>
+                    <div class="text small fw-bold text-uppercase px-3">@Html.DisplayFor(modelItem=>marketPrice)</div>
+                    
+                </li>
+                <hr class="dropdown-divider" />
+                <li>
+                    <div class="text-muted small fw-bold text-uppercase px-3">CORE</div>
+                </li>
+                <li class="nav-link px-3 ">
+                        <span class="me-2">
+                            <i class="bi bi-speedometer"></i>
+                        </span>
+                        
+                        @Html.ActionLink(
+                        "Summary",
+                        "Details", // controller action
+                        "Company", // controller
+                        new { Model.CompanyId },
+                        new{@class="text-decoration-none text-secondary "}
+                        // action parameters aka route values as required
+                        ) 
+                  
+                </li>
+                
+                        
+                      
+                 <li class="nav-link px-3 active">
+                        <span class="me-2">
+                            <i class="bi bi-speedometer"></i>
+                        </span>
+                        
+                        @Html.ActionLink(
+                        "Company Information",
+                        "CompanyInfo", // controller action
+                        "Company", // controller
+                        new { Model.CompanyId },
+                        new{@class="text-decoration-none text-secondary "}
+                        // action parameters aka route values as required
+                        ) 
+                  
+                </li>
+                    
+                 <li class="nav-link px-3 ">
+                        <span class="me-2">
+                            <i class="bi bi-speedometer"></i>
+                        </span>
+                        
+                        @Html.ActionLink(
+                        "Compare",
+                        "Compare", // controller action
+                        "Company", // controller
+                        new { Model.CompanyId },
+                        new{@class="text-decoration-none text-secondary "}
+                        // action parameters aka route values as required
+                        ) 
+                  
+                </li>
+                <li class="my-4">
+                    <hr class="dropdown-divider"/>
+                </li>
+                 <li>
+                    <div class="text-muted small fw-bold text-uppercase px-3">Analyze</div>
+                </li>
+                <li>
+                    <a href="" class="nav-link px-3">
+                        <span class="me-2">
+                            <i class="bi bi-speedometer"></i>
+                        </span>
+                        <span>Tables</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <span class="me-2"><i class="bi bi-bar-chart-line"></i></span>
+                        <span>Graphs</span>
+                        <span class="right-icon ms-auto"><i class="bi bi-chevron-compact-down"></i></span>
+                    </a>
+                    <div class="collapse" id="collapseExample">
+                      <div >
+                        <ul class="navbar-nav ps-3">
+                                <li>
+                                    <a asp-controller="home" asp-action="graph1" class="nav-link px-3">
+                                <span class="me-2">
+                                <i class="bi bi-speedometer"></i>
+                                </span>
+                                <span>Graph Name1</span>
+                            </a></li>
+                            <li>
+                                <a href="#" class="nav-link px-3">
+                                <span class="me-2">
+                                <i class="bi bi-speedometer"></i>
+                                </span>
+                                <span>Graph Name2</span>
+                            </a>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                </li>
+                <hr class="dropdown-divider" />
+                <li>
+                    <form autocomplete="off" class="inline w-100" id="searchForm">
+                        <input class="form-control form-control-sm w-75" id="searchId" type="text" placeholder="Search" name="searchString">
+                        <input id="searchButton" class="btn btn-outline-light btn-hover btn-sm search w-25" type="submit" asp-controller="home" asp-action="details" value="Search" />
+                    </form>
+                </li>
+                <br />
+                <br />
+                <hr class="dropdown-divider" />
+                <li>
+                    <a href="" class="nav-link px-3">
+                        <span class="me-2">
+                            <i class="bi bi-speedometer"></i>
+                        </span>
+                        <span>Radar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="nav-link px-3">
+                        <span class="me-2">
+                            <i class="bi bi-speedometer"></i>
+                        </span>
+                        <span>Ratio Analysis</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+    </div>
+</div>
+<div class="container-fluid">
+                        <h2 class="text-warning">Information of @Html.DisplayFor(ModelItem=>ModelItem.CompanyName)</h2>
+<p class="text-light">Amarin Corporation plc, a pharmaceutical company, engages in the development and commercialization of therapeutics 
+    for the treatment of cardiovascular diseases in the United States. Its lead product is VASCEPA, a prescription-only
+    omega-3 fatty acid product, used as an adjunct to diet for reducing triglyceride levels in adult patients with severe 
+    hypertriglyceridemia. The company sells its products principally to wholesalers and specialty pharmacy providers. It 
+    has a collaboration with Mochida Pharmaceutical Co., Ltd. to develop and commercialize drug products and indications 
+    based on the active pharmaceutical ingredient in Vascepa, the omega-3 acid, and eicosapentaenoic acid. The company was
+    formerly known as Ethical Holdings plc and changed its name to Amarin Corporation plc in 1999. Amarin Corporation plc 
+    was incorporated in 1989 and is headquartered in Dublin, Ireland.</p>
+
+    <p class="text-light">@Html.DisplayFor(ModelItem=>ModelItem.CompanyInformation)</p>
+    </div>

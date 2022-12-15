@@ -51,3 +51,5 @@ C:\Users\yigit\source\repos\Lira-Project\LiraProject\BusinessLayer\obj\Debug\net
 C:\Users\yigit\source\repos\Lira-Project\LiraProject\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll
 C:\Users\Monster\Source\Repos\Lira-Project\LiraProject\BusinessLayer\bin\Debug\net6.0\CoreLayer.dll
 C:\Users\Monster\Source\Repos\Lira-Project\LiraProject\BusinessLayer\bin\Debug\net6.0\CoreLayer.pdb
+C:\Users\yigit\Source\Repos\Lira-Project\LiraProject\BusinessLayer\bin\Debug\net6.0\CoreLayer.dll
+C:\Users\yigit\Source\Repos\Lira-Project\LiraProject\BusinessLayer\bin\Debug\net6.0\CoreLayer.pdb

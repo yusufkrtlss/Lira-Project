@@ -36,3 +36,5 @@ C:\Users\Monster\Source\Repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.
 C:\Users\Monster\Source\Repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\ref\CoreLayer.dll
 C:\Users\Monster\Source\Repos\Lira-Project\LiraProject\CoreLayer\bin\Debug\net6.0\CoreLayer.runtimeconfig.json
 C:\Users\Monster\Source\Repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\CoreLayer.genruntimeconfig.cache
+C:\Users\yigit\Source\Repos\Lira-Project\LiraProject\CoreLayer\bin\Debug\net6.0\CoreLayer.runtimeconfig.json
+C:\Users\yigit\Source\Repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\CoreLayer.genruntimeconfig.cache

@@ -1,0 +1,54 @@
+﻿using BusinessLayer.Concrete;
+using DataAccessLayer.Concrete.EntityFramework;
+using Microsoft.AspNetCore.Mvc;
+using System.Web;
+
+namespace LiraProject.Controllers
+{
+    public class CompanyController : Controller
+    {
+        CompaniesManager cm = new CompaniesManager(new EfCompaniesRepository());
+        
+
+
+        [HttpGet]
+        [Route("/company/details")]
+        public IActionResult Details(string symbol)
+        {
+            var query = cm.GetAllCompanies().AsQueryable();
+            if (!string.IsNullOrEmpty(symbol))
+            {
+                query = query.Where(c => c.CompanySymbol == symbol);
+
+            }
+            int id = query.Select(c => c.CompanyId).FirstOrDefault();
+
+            var stocks = cm.GetById(id);
+            return View(stocks);
+
+            
+        }
+
+        //public ActionResult Summary(int id)
+        //{
+        //    var stock = cm.GetById(id);
+        //    return View(stock);
+        //}
+        
+        public ActionResult CompanyInfo(int CompanyId)
+        {
+           
+
+            var stock = cm.GetById(CompanyId);
+            return View(stock);
+        }
+
+        public ActionResult Graph1(int id)
+        {
+            var stock = cm.GetById(id);
+            return View("Graph1", stock);
+        }
+
+        
+    }
+}

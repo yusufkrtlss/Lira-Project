@@ -3343,19 +3343,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Monster\\.nuget\\packages\\": {}
+    "C:\\Users\\yigit\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Monster\\Source\\Repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj",
+      "projectUniqueName": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj",
       "projectName": "CoreLayer",
-      "projectPath": "C:\\Users\\Monster\\Source\\Repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj",
-      "packagesPath": "C:\\Users\\Monster\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Monster\\Source\\Repos\\Lira-Project\\LiraProject\\CoreLayer\\obj\\",
+      "projectPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj",
+      "packagesPath": "C:\\Users\\yigit\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\CoreLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Monster\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yigit\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3421,7 +3421,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
