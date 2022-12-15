@@ -3555,19 +3555,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\berka\\.nuget\\packages\\": {}
+    "C:\\Users\\yigit\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\berka\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj",
+      "projectUniqueName": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj",
       "projectName": "CoreLayer",
-      "projectPath": "C:\\Users\\berka\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj",
-      "packagesPath": "C:\\Users\\berka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\berka\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\obj\\",
+      "projectPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj",
+      "packagesPath": "C:\\Users\\yigit\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\berka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yigit\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3634,7 +3634,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

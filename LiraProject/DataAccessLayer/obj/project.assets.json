@@ -3592,19 +3592,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\berka\\.nuget\\packages\\": {}
+    "C:\\Users\\yigit\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\berka\\source\\repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "C:\\Users\\berka\\source\\repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj",
-      "packagesPath": "C:\\Users\\berka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\berka\\source\\repos\\Lira-Project\\LiraProject\\DataAccessLayer\\obj\\",
+      "projectPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj",
+      "packagesPath": "C:\\Users\\yigit\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\berka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yigit\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3618,11 +3618,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\berka\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj": {
-              "projectPath": "C:\\Users\\berka\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj"
+            "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj": {
+              "projectPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj"
             },
-            "C:\\Users\\berka\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj": {
-              "projectPath": "C:\\Users\\berka\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj"
+            "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj"
             }
           }
         }
@@ -3678,7 +3678,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -29,5 +29,6 @@ namespace EntityLayer.Concrete
         public ICollection<Share> Shares { get; set; }
         public ICollection<Graphs> Graphs { get; set; }
         public ICollection<News> News { get; set; }
+        public ICollection<Favorites> Favorites { get; set; }
     }
 }

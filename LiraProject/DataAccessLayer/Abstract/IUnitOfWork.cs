@@ -9,6 +9,7 @@ namespace DataAccessLayer.Abstract
     public interface IUnitOfWork : IAsyncDisposable
     {
         ICustomerDal Customer { get; }
+        IFavoritesDal Favorites { get; }
         Task<int> SaveAsync();
 
     }

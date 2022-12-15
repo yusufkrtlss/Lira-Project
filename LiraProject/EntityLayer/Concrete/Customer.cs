@@ -21,5 +21,7 @@ namespace EntityLayer.Concrete
 
         public DateTime CustomerCreatedTime { get; set; }
         public DateTime CustomerModifiedTime { get; set; }
+        public ICollection<Favorites> Favorites { get; set; }
+
     }
 }

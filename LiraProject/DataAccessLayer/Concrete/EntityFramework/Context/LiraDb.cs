@@ -15,6 +15,7 @@ namespace DataAccessLayer.Concrete.EntityFramework.Context
         public DbSet<Graphs> Graphs { get; set; }
         public DbSet<News> News { get; set; }
         public DbSet<Share> Shares { get; set; }
+        public DbSet<Favorites> Favorites { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
