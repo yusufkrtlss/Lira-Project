@@ -11,90 +11,50 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/navbar.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/LiraProject.styles.css" asp-append-version="true" />
-   @* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">*@
-   
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+
 
 
 </head>
 <body>
-   
-           
 
-    
-            <div class="card fixed-top">
-                <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                        <a class="navbar-brand" href="#">LoI</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <div class="first">
-                                <ul class="navbar-nav ms-auto">
-                                    <li class="nav-item">
-                                <a class="nav-link active" asp-controller="home" asp-action="index">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                <a class="nav-link" asp-controller="home" asp-action="contact">Contact</a>
-                                    </li>
-                                    <li class="nav-item">
-                                <a class="nav-link" asp-controller="Home" asp-action="MemberPlan">Member Plans</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <form class="second" action="">
-                                <div class="btn">
-                                <a class="text-dark text-decoration-none" asp-controller="Home" asp-action="Login">Login</a>                                   
-                                </div>
-                                <div class="btn btn-primary">
-                                <a class="text-dark text-decoration-none" asp-controller="Home" asp-action="SignIn">Sign In</a>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </nav>
+    <!-- Navbar -->
+    @await Html.PartialAsync("Navbar")
 
-            </div>
-        
-
-    
-        
-    
     <div class="main-container container">
         <main role="main" class="pt-5 ">
             @RenderBody()
-       </main>
-        </div>
-    <footer class="footer text-muted footer-dark bg-dark">
-        <div class="container">
-            &copy; 2022 - LiraProject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    @await Html.PartialAsync("Footer")
+
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/jquery.dataTables.min.js"></script>
     <script src="~/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://kit.fontawesome.com/c2396ab2b3.js" crossorigin="anonymous"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
 
 <style>
-  /*  .navbar-expand-lg .navbar-collapse {
-display: flex!important;
-justify-content: space-around;
-flex-basis: auto;
-}*/
+    /*  .navbar-expand-lg .navbar-collapse {
+            display: flex!important;
+            justify-content: space-around;
+            flex-basis: auto;
+            }*/
 
-    
-    
+
+
 </style>
 

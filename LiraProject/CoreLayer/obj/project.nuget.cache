@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u8CcuhPDoPLprautI4KQfbegIkR9HoThED6fHWHTg5mJL8iBnlbrURfhCuAoN9kk1JS9b9D2TCDvaMYw1UmEQw==",
+  "dgSpecHash": "kTUvR2aTjrxztFkyH/nrdUvrtJAbelwmXcUoV6DPf9JYa5BUV8n6pgBKDt0OT5J1vf5btgaL5mcxBQoOGEoB+w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Monster\\Source\\Repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj",
+  "projectFilePath": "C:\\Users\\Monster\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Monster\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Monster\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

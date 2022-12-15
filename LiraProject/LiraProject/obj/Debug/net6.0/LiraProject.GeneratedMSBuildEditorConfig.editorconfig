@@ -8,69 +8,73 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LiraProject
 build_property.RootNamespace = LiraProject
-build_property.ProjectDir = C:\Users\Monster\Source\Repos\Lira-Project\LiraProject\LiraProject\
+build_property.ProjectDir = C:\Users\Monster\source\repos\Lira-Project\LiraProject\LiraProject\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Monster\Source\Repos\Lira-Project\LiraProject\LiraProject
+build_property.MSBuildProjectDirectory = C:\Users\Monster\source\repos\Lira-Project\LiraProject\LiraProject
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Monster/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Home/Details.cshtml]
+[C:/Users/Monster/source/repos/Lira-Project/LiraProject/LiraProject/Views/Home/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Monster/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Home/Graph1.cshtml]
+[C:/Users/Monster/source/repos/Lira-Project/LiraProject/LiraProject/Views/Home/Graph1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHcmFwaDEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Monster/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Home/Graph2.cshtml]
+[C:/Users/Monster/source/repos/Lira-Project/LiraProject/LiraProject/Views/Home/Graph2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHcmFwaDIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Monster/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Home/Index.cshtml]
+[C:/Users/Monster/source/repos/Lira-Project/LiraProject/LiraProject/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Monster/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Home/Login.cshtml]
+[C:/Users/Monster/source/repos/Lira-Project/LiraProject/LiraProject/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Monster/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Home/MemberPlan.cshtml]
+[C:/Users/Monster/source/repos/Lira-Project/LiraProject/LiraProject/Views/Home/MemberPlan.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNZW1iZXJQbGFuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Monster/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Monster/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Home/SignIn.cshtml]
+[C:/Users/Monster/source/repos/Lira-Project/LiraProject/LiraProject/Views/Home/SignIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWduSW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Monster/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Shared/Error.cshtml]
+[C:/Users/Monster/source/repos/Lira-Project/LiraProject/LiraProject/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Monster/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Shared/_CompanyInfo.cshtml]
+[C:/Users/Monster/source/repos/Lira-Project/LiraProject/LiraProject/Views/Shared/Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEZvb3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Monster/source/repos/Lira-Project/LiraProject/LiraProject/Views/Shared/Navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5hdmJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Monster/source/repos/Lira-Project/LiraProject/LiraProject/Views/Shared/_CompanyInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db21wYW55SW5mby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Monster/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Shared/_Summary.cshtml]
+[C:/Users/Monster/source/repos/Lira-Project/LiraProject/LiraProject/Views/Shared/_Summary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdW1tYXJ5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Monster/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Monster/source/repos/Lira-Project/LiraProject/LiraProject/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Monster/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/_ViewImports.cshtml]
+[C:/Users/Monster/source/repos/Lira-Project/LiraProject/LiraProject/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Monster/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/_ViewStart.cshtml]
+[C:/Users/Monster/source/repos/Lira-Project/LiraProject/LiraProject/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Monster/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Shared/_Layout.cshtml]
+[C:/Users/Monster/source/repos/Lira-Project/LiraProject/LiraProject/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-d3wb6s13lf

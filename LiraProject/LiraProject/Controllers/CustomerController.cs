@@ -19,7 +19,7 @@ namespace LiraProject.Controllers
             return View();
         }
         [HttpPost]
-        [Route("/Customer/Add")]
+        [Route("/CustomerController/Add")]
         public async Task<IActionResult> Add(CustomerAddDto DTO)
         {
             await _customerService.Add(DTO);

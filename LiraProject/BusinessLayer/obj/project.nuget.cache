@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dxdgQ5RV2JItFr92nKURsKYFdhjtv6EmN4g8MnKSk1EBUQULqXdWhjBQbxNCQfLXeaQpyobWGFXRfNaJGMEIeg==",
+  "dgSpecHash": "SLNv1eT3384o1+FNJ7AS5oSTHmFBw7N4XB4SMKWUCQT6xNeHl76uVc76y/a8pucta4UdEn8oSMMOfWABLmCb3A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Monster\\Source\\Repos\\Lira-Project\\LiraProject\\BusinessLayer\\BusinessLayer.csproj",
+  "projectFilePath": "C:\\Users\\Monster\\source\\repos\\Lira-Project\\LiraProject\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Monster\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Monster\\.nuget\\packages\\automapper.collection\\9.0.0\\automapper.collection.9.0.0.nupkg.sha512",
