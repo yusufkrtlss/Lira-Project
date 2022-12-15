@@ -10,7 +10,7 @@
 }*/
 
 .card .navbar .navbar-brand {
-    color: #e60707;
+    color: #ed961d;
     font-weight: 600;
 }
 
@@ -28,9 +28,9 @@
     text-transform: capitalize;
     width: 100px;
     background-color: transparent;
-    color: #e60707;
+    color: #ed961d;
     font-weight: 600;
-    border: 2px solid #e60707;
+    border: 2px solid #ed961d;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 0;
@@ -40,7 +40,7 @@
 
 
     .card .navbar .container-fluid form .btn.btn-primary:hover {
-        background-color: #e60707;
+        background-color: #ed961d;
         color: #fff;
     }
 
@@ -53,12 +53,12 @@
 }
 
     .container-fluid ul li.nav-item .nav-link:hover {
-        border-bottom: 2px solid #e60707;
+        border-bottom: 2px solid #ed961d;
         padding: 0px;
     }
 
     .container-fluid ul li.nav-item .nav-link.active {
-        border-bottom: 2px solid #e60707;
+        border-bottom: 2px solid #ed961d;
     }
 
 /* .card-body {
@@ -73,7 +73,7 @@
 
 .card-body .btn.btn-primary {
     margin-top: 2rem;
-    background-color: #e60707;
+    background-color: #ed961d;
     color: #fff;
     width: 120px;
     height: 45px;
@@ -89,9 +89,9 @@
 }
 
     .card-body .btn.btn-primary:hover {
-        color: #e60707;
+        color: #ed961d;
         background-color: #fff;
-        border: 2px solid #e60707;
+        border: 2px solid #ed961d;
     }
 
 .card-footer {
@@ -108,18 +108,18 @@
     }
 
         .card-footer .box:hover {
-            border-bottom: 3px solid #e60707;
-            color: #e60707;
+            border-bottom: 3px solid #ed961d;
+            color: #ed961d;
         }
 
         .card-footer .box.active {
-            border-bottom: 3px solid #e60707;
-            color: #e60707;
+            border-bottom: 3px solid #ed961d;
+            color: #ed961d;
         }
 
 .box .icons {
     font-size: 2.2rem;
-    color: #e60707;
+    color: #ed961d;
 }
 
 .card-footer .btn.btn-primary {
@@ -177,7 +177,7 @@
         transform: translateY(-50%);
         height: 60px;
         width: 60px;
-        background-color: #e60707;
+        background-color: #ed961d;
         opacity: .4;
     }
 
@@ -208,7 +208,7 @@
         left: 10%;
         width: 30px;
         height: 30px;
-        background-color: #e60707;
+        background-color: #ed961d;
         opacity: .4;
     }
 
