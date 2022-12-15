@@ -38,3 +38,17 @@ C:\Users\Monster\Source\Repos\Lira-Project\LiraProject\CoreLayer\bin\Debug\net6.
 C:\Users\Monster\Source\Repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\CoreLayer.genruntimeconfig.cache
 C:\Users\yigit\Source\Repos\Lira-Project\LiraProject\CoreLayer\bin\Debug\net6.0\CoreLayer.runtimeconfig.json
 C:\Users\yigit\Source\Repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\CoreLayer.genruntimeconfig.cache
+C:\Users\berka\source\repos\Lira-Project\LiraProject\CoreLayer\bin\Debug\net6.0\CoreLayer.deps.json
+C:\Users\berka\source\repos\Lira-Project\LiraProject\CoreLayer\bin\Debug\net6.0\CoreLayer.runtimeconfig.json
+C:\Users\berka\source\repos\Lira-Project\LiraProject\CoreLayer\bin\Debug\net6.0\CoreLayer.dll
+C:\Users\berka\source\repos\Lira-Project\LiraProject\CoreLayer\bin\Debug\net6.0\CoreLayer.pdb
+C:\Users\berka\source\repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\CoreLayer.csproj.AssemblyReference.cache
+C:\Users\berka\source\repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\CoreLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berka\source\repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\CoreLayer.AssemblyInfoInputs.cache
+C:\Users\berka\source\repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\CoreLayer.AssemblyInfo.cs
+C:\Users\berka\source\repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\CoreLayer.csproj.CoreCompileInputs.cache
+C:\Users\berka\source\repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\CoreLayer.dll
+C:\Users\berka\source\repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\refint\CoreLayer.dll
+C:\Users\berka\source\repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\CoreLayer.pdb
+C:\Users\berka\source\repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\CoreLayer.genruntimeconfig.cache
+C:\Users\berka\source\repos\Lira-Project\LiraProject\CoreLayer\obj\Debug\net6.0\ref\CoreLayer.dll
