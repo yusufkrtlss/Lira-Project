@@ -3,7 +3,7 @@
 @model Companies
 @{
     ViewData["Title"] = "Details Page";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_AdminDetailsLayout.cshtml";
     string marketPrice = Model.CompanyRegularMarketPrice.ToString("#.##");
     string marketChange = Model.CompanyRegularMarketChange.ToString("#.##");
     string marketVolume = Model.CompanyRegularMarketVolume.ToString("#.##");
@@ -17,144 +17,7 @@
 }
 
 
-<div class="offcanvas offcanvas-start bg-dark text-light sidebar-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    
-    <div class="offcanvas-body p-0">
-        <nav class="navbar-dark">
-            <ul class="navbar-nav">
-                <hr class="align-content-sm-center" />
-                <li>
-                    <div class="text small fw-bold text-uppercase px-3">@Html.DisplayFor(Model=>Model.CompanyName)</div>
-                    <div class="text small fw-bold text-uppercase px-3">@Html.DisplayFor(modelItem=>marketPrice)</div>
-                    
-                </li>
-                <hr class="dropdown-divider" />
-                <li>
-                    <div class="text-muted small fw-bold text-uppercase px-3">CORE</div>
-                </li>
-                <li class="nav-link px-3 ">
-                        <span class="me-2">
-                            <i class="bi bi-speedometer"></i>
-                        </span>
-                        
-                        @Html.ActionLink(
-                        "Summary",
-                        "Details", // controller action
-                        "Company", // controller
-                        new { Model.CompanyId },
-                        new{@class="text-decoration-none text-secondary "}
-                        // action parameters aka route values as required
-                        ) 
-                  
-                </li>
-                
-                        
-                      
-                 <li class="nav-link px-3 ">
-                        <span class="me-2">
-                            <i class="bi bi-speedometer"></i>
-                        </span>
-                        
-                        @Html.ActionLink(
-                        "Company Information",
-                        "CompanyInfo", // controller action
-                        "Company", // controller
-                        new { Model.CompanyId },
-                        new{@class="text-decoration-none text-secondary "}
-                        // action parameters aka route values as required
-                        ) 
-                  
-                </li>
-                    
-                 <li class="nav-link px-3 ">
-                        <span class="me-2">
-                            <i class="bi bi-speedometer"></i>
-                        </span>
-                        
-                        @Html.ActionLink(
-                        "Compare",
-                        "Compare", // controller action
-                        "Company", // controller
-                        new { Model.CompanyId },
-                        new{@class="text-decoration-none text-secondary "}
-                        // action parameters aka route values as required
-                        ) 
-                  
-                </li>
-                <li class="my-4">
-                    <hr class="dropdown-divider"/>
-                </li>
-                 <li>
-                    <div class="text-muted small fw-bold text-uppercase px-3">Analyze</div>
-                </li>
-                <li>
-                    <a href="" class="nav-link px-3">
-                        <span class="me-2">
-                            <i class="bi bi-speedometer"></i>
-                        </span>
-                        <span>Tables</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        <span class="me-2"><i class="bi bi-bar-chart-line"></i></span>
-                        <span>Graphs</span>
-                        <span class="right-icon ms-auto"><i class="bi bi-chevron-compact-down"></i></span>
-                    </a>
-                    <div class="collapse" id="collapseExample">
-                      <div >
-                        <ul class="navbar-nav ps-3">
-                                <li>
-                                    <a asp-controller="home" asp-action="graph1" class="nav-link px-3">
-                                <span class="me-2">
-                                <i class="bi bi-speedometer"></i>
-                                </span>
-                                <span>Graph Name1</span>
-                            </a></li>
-                            <li>
-                                <a href="#" class="nav-link px-3">
-                                <span class="me-2">
-                                <i class="bi bi-speedometer"></i>
-                                </span>
-                                <span>Graph Name2</span>
-                            </a>
-                            </li>
-                        </ul>
-                      </div>
-                    </div>
-                </li>
-                <hr class="dropdown-divider" />
-                <li>
-                    <form autocomplete="off" class="inline w-100" id="searchForm">
-                        <input class="form-control form-control-sm w-75" id="searchId" type="text" placeholder="Search" name="searchString">
-                        <input id="searchButton" class="btn btn-outline-light btn-hover btn-sm search w-25" type="submit" asp-controller="home" asp-action="details" value="Search" />
-                    </form>
-                </li>
-                <br />
-                <br />
-                <hr class="dropdown-divider" />
-                <li>
-                    <a href="" class="nav-link px-3">
-                        <span class="me-2">
-                            <i class="bi bi-speedometer"></i>
-                        </span>
-                        <span>Radar</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="nav-link px-3">
-                        <span class="me-2">
-                            <i class="bi bi-speedometer"></i>
-                        </span>
-                        <span>Ratio Analysis</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        
-    </div>
-</div>
-<div class=" pt-5" id="myPartial"></div>
+
     
 <div class="container-fluid">
         <div class="row">
@@ -201,15 +64,7 @@
     </div>
 
         <style>
-    .main-div {
-        margin-left: var(--offcanvas-width);        
-    }
-    .sidebar-nav{
     
-max-width: 20%;
-
-bottom:0;
-    }
         </style>
 
         @section Scripts{

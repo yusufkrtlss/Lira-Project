@@ -30,41 +30,7 @@ body {
     --bottomNavbarHeight: 53px;
 }
 
-.sidebar-nav {
-    width: var(--offcanvas-width);
-    transform: none;
-    visibility: visible !important;
-    top: var(--topNavbarHeight);
-    bottom: var(--bottomNavbarHeight);
-    height: calc(100% - var(--topNavbarHeight)--bottomNavbarHeight);
-}
 
-.sidebar-link {
-    display: flex;
-    align-items: center;
-}
-
-    .sidebar-link .right-icon {
-        display: inline-flex;
-        transition: all ease 0.25s;
-    }
-
-    .sidebar-link[aria-expanded="true"] .right-icon {
-        transform: rotate(180deg);
-    }
-
-.offcanvas-backdrop {
-    display: none;
-}
-
-@@media (min-width: 992px) {
-    .sidebar-nav {
-        transform: none;
-        visibility: visible !important;
-        top: var(--topNavbarHeight);
-        height: calc(100% - var(--topNavbarHeight));
-    }
-}
 
 
 #searchForm {

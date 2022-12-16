@@ -1,0 +1,198 @@
+﻿@using EntityLayer.Concrete
+@model Companies
+@{
+    ViewData["Title"] = "Details Page";
+    
+    string marketPrice = Model.CompanyRegularMarketPrice.ToString("#.##");
+    string marketChange = Model.CompanyRegularMarketChange.ToString("#.##");
+    string marketVolume = Model.CompanyRegularMarketVolume.ToString("#.##");
+    string marketDayLow = Model.CompanyRegularMarketDayLow.ToString("#.##");
+    string marketDayHigh = Model.CompanyRegularMarketDayHigh.ToString("#.##");
+    string marketBalance = Model.CompanyBalance.ToString("#,##0");
+    string marketIncome = Model.CompanyIncomeStatement.ToString("#,##0");
+    string marketEbitda = Model.CompanyEBITDA.ToString("#,##0");
+    string marketProfit = Model.CompanyProfit.ToString("#,##0");
+    string marketPriceGainRate = Model.CompanyPriceGainRate.ToString("#.##");
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/navbar.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/LiraProject.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    @await Html.PartialAsync("AdminDetailsNavbar")
+
+
+  
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-secondary min-vh-100">
+                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline">Menu</span>
+                </a>
+                <ul class="nav nav-pills flex-column mb-lg-auto mt-2 mb-0 align-items-sm-start" id="menu">
+                    <li class="pt-4 text-light">
+                    <div class="text small fw-bold text-uppercase px-3">@Html.DisplayFor(Model=>Model.CompanyName)
+                    <span class="text-danger">
+                        %@Html.DisplayFor(modelItem=>marketChange)
+                    </span>
+                    </div>
+                    @*<div class="text small fw-bold text-uppercase px-3">@Html.DisplayFor(modelItem=>marketPrice)</div>*@
+                    
+                </li>
+                
+                <hr />
+                    <li class="pt-4">
+                        <span class="me-2">
+                            <i class="fs-5 bi bi-speedometer"></i>
+                        </span>
+                        
+                        @Html.ActionLink(
+                        "Summary",
+                        "Details", // controller action
+                        "Company", // controller
+                        new { Model.CompanyId },
+                        new{@class="text-decoration-none text-secondary "}
+                        // action parameters aka route values as required
+                        ) 
+                  
+                </li>
+                <li class="pt-4">
+                        <span class="me-2">
+                            <i class="fs-5 bi bi-speedometer"></i>
+                        </span>
+                        
+                        @Html.ActionLink(
+                        "Company Information",
+                        "CompanyInfo", // controller action
+                        "Company", // controller
+                        new { Model.CompanyId },
+                        new{@class="text-decoration-none text-secondary "}
+                        // action parameters aka route values as required
+                        ) 
+                  
+                </li>
+                <li class="pt-4">
+                        <span class="me-2">
+                            <i class="fs-5 bi bi-speedometer"></i>
+                        </span>
+                        
+                        @Html.ActionLink(
+                        "Compare",
+                        "Compare", // controller action
+                        "Company", // controller
+                        new { Model.CompanyId },
+                        new{@class="text-decoration-none text-secondary "}
+                        // action parameters aka route values as required
+                        ) 
+                  
+                </li>
+                <br />
+                <hr  />
+                
+                    <li  class="pt-4">
+                        <a href="#submenu1" data-bs-toggle="collapse" class="text-decoration-none text-secondary ">
+                            <i class="fs-5 bi bi-speedometer"></i> <span class="ms-2 d-lg-inline">Graphs</span> </a>
+                            <span class="right-icon ms-auto"><i class="bi bi-chevron-compact-down"></i></span>
+                        <ul class="collapse hide nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="#" class="nav-link px-0"> <span class=" d-sm-inline text-secondary ms-1 ">Graph1</span>  </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-secondary ms-1 ">Graph2</span>  </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                   
+                    <li class="pt-4">
+                        <span class="me-2">
+                            <i class="fs-5 bi bi-speedometer"></i>
+                        </span>
+                        
+                        @Html.ActionLink(
+                        "Radar",
+                        "Compare", // controller action
+                        "Company", // controller
+                        new { Model.CompanyId },
+                        new{@class="text-decoration-none text-secondary "}
+                        // action parameters aka route values as required
+                        ) 
+                  
+                </li>
+                <li class="pt-4">
+                        <span class="me-2">
+                            <i class="fs-5 bi bi-speedometer"></i>
+                        </span>
+                        
+                        @Html.ActionLink(
+                        "Ratio Analysis",
+                        "Compare", // controller action
+                        "Company", // controller
+                        new { Model.CompanyId },
+                        new{@class="text-decoration-none text-secondary "}
+                        // action parameters aka route values as required
+                        ) 
+                  
+                </li>
+                    
+                </ul>
+                <hr>
+                
+            </div>
+        </div>
+            <div class="col py-3 mt-3" >
+                 @RenderBody()
+            </div>
+        </div>
+        </div>
+
+    
+
+    
+
+     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/jquery.dataTables.min.js"></script>
+    <script src="~/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://kit.fontawesome.com/c2396ab2b3.js" crossorigin="anonymous"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+<style>
+    .main-div {
+        margin-left: var(--offcanvas-width);        
+    }
+    .sidebar-nav{   
+
+        max-width: 20%;
+        bottom:0;
+    }
+    hr {
+  
+  clear:both;
+  display:block;
+  width: 100%;               
+  background-color:#ed961d;
+  height: 0.5px;
+}
+</style>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\LiraProject\\LiraProject.csproj": {}
+    "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\LiraProject\\LiraProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\BusinessLayer\\BusinessLayer.csproj",
+        "projectPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\BusinessLayer\\BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\yigit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\BusinessLayer\\obj\\",
+        "outputPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yigit\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,14 +28,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj": {
-                "projectPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj"
+              "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj": {
+                "projectPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj"
               },
-              "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -61,8 +61,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -71,18 +70,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj": {
+    "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj",
+        "projectUniqueName": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj",
         "projectName": "CoreLayer",
-        "projectPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj",
+        "projectPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj",
         "packagesPath": "C:\\Users\\yigit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\obj\\",
+        "outputPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\CoreLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yigit\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -142,8 +141,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -152,18 +150,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\yigit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yigit\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -180,11 +178,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj": {
-                "projectPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj"
+              "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj": {
+                "projectPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj"
               },
-              "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -230,8 +228,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -240,18 +237,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj": {
+    "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj",
+        "projectPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj",
         "packagesPath": "C:\\Users\\yigit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\obj\\",
+        "outputPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yigit\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -285,8 +282,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -295,18 +291,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\LiraProject\\LiraProject.csproj": {
+    "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\LiraProject\\LiraProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\LiraProject\\LiraProject.csproj",
+        "projectUniqueName": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\LiraProject\\LiraProject.csproj",
         "projectName": "LiraProject",
-        "projectPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\LiraProject\\LiraProject.csproj",
+        "projectPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\LiraProject\\LiraProject.csproj",
         "packagesPath": "C:\\Users\\yigit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\LiraProject\\obj\\",
+        "outputPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\LiraProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yigit\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -323,14 +319,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\BusinessLayer\\BusinessLayer.csproj"
+              "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\BusinessLayer\\BusinessLayer.csproj"
               },
-              "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -376,8 +372,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -389,7 +384,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

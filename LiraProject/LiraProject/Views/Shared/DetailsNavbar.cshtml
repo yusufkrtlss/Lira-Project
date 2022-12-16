@@ -1,0 +1,55 @@
+﻿<!-- Details Navbar-->
+
+<div class="card fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LoI</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                            <form autocomplete="off" class="d-flex" id="navbarSearchForm">
+                                <input class="form-control me-2" type="text" placeholder="Search" name="searchString" id="navbarSearchId">
+                                <input id="navbarSearchButton" class="btn btn-outline-light btn-hover btn-sm search" type="submit" asp-controller="home" asp-action="details" value="Search" />
+                            </form>
+                        </li>
+                </ul>
+                <div class="first">
+                    <ul class="navbar-nav ms-auto">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-controller="home" asp-action="index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-controller="home" asp-action="contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-controller="Home" asp-action="MemberPlan">Member Plans</a>
+                        </li>
+                        
+                    </ul>
+                            
+                </div>
+                <form class="second " action="">
+                    <div class="btn">
+                        <a class="text-light text-decoration-none " asp-controller="Home" asp-action="Login">Login</a>
+                    </div>
+                    <div class="btn btn-primary text-light">
+                        <a class="text-light text-decoration-none" asp-controller="Home" asp-action="SignIn">Sign In</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+</div>
+
+                <style>
+                    #searchForm{
+                        max-width:50px;
+                    }
+                </style>
