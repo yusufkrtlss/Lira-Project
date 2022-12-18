@@ -24,11 +24,7 @@ body {
     overflow: auto !important;
 }
 
-:root {
-    --offcanvas-width: 240px;
-    --topNavbarHeight: 65px;
-    --bottomNavbarHeight: 53px;
-}
+
 
 
 

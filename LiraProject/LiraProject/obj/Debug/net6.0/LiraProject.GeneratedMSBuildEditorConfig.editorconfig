@@ -8,85 +8,89 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LiraProject
 build_property.RootNamespace = LiraProject
-build_property.ProjectDir = C:\Users\yigit\Source\Repos\Lira-Project\LiraProject\LiraProject\
+build_property.ProjectDir = C:\Users\yigit\source\repos\Lira-Project\LiraProject\LiraProject\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\yigit\Source\Repos\Lira-Project\LiraProject\LiraProject
+build_property.MSBuildProjectDirectory = C:\Users\yigit\source\repos\Lira-Project\LiraProject\LiraProject
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/yigit/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Company/CompanyInfo.cshtml]
+[C:/Users/yigit/source/repos/Lira-Project/LiraProject/LiraProject/Views/Company/CompanyInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxDb21wYW55SW5mby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yigit/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Company/Details.cshtml]
+[C:/Users/yigit/source/repos/Lira-Project/LiraProject/LiraProject/Views/Company/Compare.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxDb21wYXJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yigit/source/repos/Lira-Project/LiraProject/LiraProject/Views/Company/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yigit/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Company/Graph1.cshtml]
+[C:/Users/yigit/source/repos/Lira-Project/LiraProject/LiraProject/Views/Company/Graph1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxHcmFwaDEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yigit/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Company/Graph2.cshtml]
+[C:/Users/yigit/source/repos/Lira-Project/LiraProject/LiraProject/Views/Company/Graph2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxHcmFwaDIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yigit/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Home/Index.cshtml]
+[C:/Users/yigit/source/repos/Lira-Project/LiraProject/LiraProject/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yigit/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Home/Login.cshtml]
+[C:/Users/yigit/source/repos/Lira-Project/LiraProject/LiraProject/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yigit/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Home/MemberPlan.cshtml]
+[C:/Users/yigit/source/repos/Lira-Project/LiraProject/LiraProject/Views/Home/MemberPlan.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNZW1iZXJQbGFuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yigit/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Home/SignIn.cshtml]
+[C:/Users/yigit/source/repos/Lira-Project/LiraProject/LiraProject/Views/Home/SignIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWduSW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yigit/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Shared/AdminDetailsNavbar.cshtml]
+[C:/Users/yigit/source/repos/Lira-Project/LiraProject/LiraProject/Views/Shared/AdminDetailsNavbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluRGV0YWlsc05hdmJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yigit/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Shared/DetailsNavbar.cshtml]
+[C:/Users/yigit/source/repos/Lira-Project/LiraProject/LiraProject/Views/Shared/DetailsNavbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXERldGFpbHNOYXZiYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yigit/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Shared/Error.cshtml]
+[C:/Users/yigit/source/repos/Lira-Project/LiraProject/LiraProject/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yigit/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Shared/Footer.cshtml]
+[C:/Users/yigit/source/repos/Lira-Project/LiraProject/LiraProject/Views/Shared/Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEZvb3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yigit/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Shared/Navbar.cshtml]
+[C:/Users/yigit/source/repos/Lira-Project/LiraProject/LiraProject/Views/Shared/Navbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5hdmJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yigit/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Shared/_AdminDetailsLayout.cshtml]
+[C:/Users/yigit/source/repos/Lira-Project/LiraProject/LiraProject/Views/Shared/_AdminDetailsLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkRldGFpbHNMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yigit/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Shared/_DetailsLayout.cshtml]
+[C:/Users/yigit/source/repos/Lira-Project/LiraProject/LiraProject/Views/Shared/_DetailsLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EZXRhaWxzTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yigit/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/yigit/source/repos/Lira-Project/LiraProject/LiraProject/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yigit/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/_ViewImports.cshtml]
+[C:/Users/yigit/source/repos/Lira-Project/LiraProject/LiraProject/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yigit/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/_ViewStart.cshtml]
+[C:/Users/yigit/source/repos/Lira-Project/LiraProject/LiraProject/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yigit/Source/Repos/Lira-Project/LiraProject/LiraProject/Views/Shared/_Layout.cshtml]
+[C:/Users/yigit/source/repos/Lira-Project/LiraProject/LiraProject/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-d3wb6s13lf

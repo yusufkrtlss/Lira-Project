@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s5kAEfcKut1nkXKEU1hPAow65MPCYD4Fi3T1mdbLIJMRTj0udG/yt5gbUtHmbPtT3x6OlKknn1pwjtprqLRsJA==",
+  "dgSpecHash": "jQJGvpTG1rMsY2ItHeds4zEoClsDpVzKtQE1iWc9hontdM4w43UZykJnQZsD0xdoI8w//v2as2PyJGHcl8QIkQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\LiraProject\\LiraProject.csproj",
+  "projectFilePath": "C:\\Users\\yigit\\source\\repos\\Lira-Project\\LiraProject\\LiraProject\\LiraProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yigit\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\yigit\\.nuget\\packages\\automapper.collection\\9.0.0\\automapper.collection.9.0.0.nupkg.sha512",

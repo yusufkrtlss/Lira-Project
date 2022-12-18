@@ -29,12 +29,7 @@ namespace LiraProject.Controllers
             
         }
 
-        //public ActionResult Summary(int id)
-        //{
-        //    var stock = cm.GetById(id);
-        //    return View(stock);
-        //}
-        
+       
         public ActionResult CompanyInfo(int CompanyId)
         {
            
@@ -43,9 +38,15 @@ namespace LiraProject.Controllers
             return View(stock);
         }
 
-        public ActionResult Graph1(int id)
+        public ActionResult Compare(int CompanyId)
         {
-            var stock = cm.GetById(id);
+            var stock = cm.GetById(CompanyId);
+            return View(stock);
+        }
+
+        public ActionResult Graph1(int CompanyId)
+        {
+            var stock = cm.GetById(CompanyId);
             return View("Graph1", stock);
         }
 

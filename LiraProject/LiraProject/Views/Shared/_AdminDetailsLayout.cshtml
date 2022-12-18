@@ -111,7 +111,19 @@
                             <span class="right-icon ms-auto"><i class="bi bi-chevron-compact-down"></i></span>
                         <ul class="collapse hide nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                             <li class="w-100">
-                                <a href="#" class="nav-link px-0"> <span class=" d-sm-inline text-secondary ms-1 ">Graph1</span>  </a>
+                                @*<a href="#" class="nav-link px-0"> <span class=" d-sm-inline text-secondary ms-1 ">Graph1</span>  </a>*@
+                                <span class="me-2">
+                                        <i class="fs-5 bi bi-speedometer"></i>
+                                    </span>
+                        
+                                    @Html.ActionLink(
+                                    "Graph1",
+                                    "Graph1", // controller action
+                                    "Company", // controller
+                                    new { Model.CompanyId },
+                                    new{@class="text-decoration-none text-secondary "}
+                                    // action parameters aka route values as required
+                                    ) 
                             </li>
                             <li>
                                 <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-secondary ms-1 ">Graph2</span>  </a>

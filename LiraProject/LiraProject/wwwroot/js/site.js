@@ -86,7 +86,6 @@ $(document).ready(function () {
     });
 });
 
-
 var xValues = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
 var yValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
 
@@ -95,20 +94,37 @@ new Chart("myChart", {
     data: {
         labels: xValues,
         datasets: [{
-            backgroundColor: "rgba(0,0,0,1.0)",
-            borderColor: "rgba(0,0,0,0.1)",
+            backgroundColor: "#9BD0F5",
+            borderColor: "#9BD0F5",
             data: yValues
         }]
     },
-    
-});
 
-var labels = ["january", "february", "march", "april", "may", "june", "july"];
+});
+var labels1 = ["january", "february", "march", "april", "may", "june", "july"];
 
 new Chart("lineChart", {
     type: "line",
     data: {
-        labels: labels,
+        labels: labels1,
+        datasets: [{
+            label: 'My First Dataset',
+            data: [65, 59, 80, 81, 56, 55, 40],
+            fill: false,
+            borderColor: 'rgb(75, 192, 192)',
+            tension: 0.1
+        }]
+    },
+
+
+});
+
+var labels1 = ["january", "february", "march", "april", "may", "june", "july"];
+
+new Chart("lineChart2", {
+    type: "line",
+    data: {
+        labels: labels1,
         datasets: [{
             label: 'My First Dataset',
             data: [65, 59, 80, 81, 56, 55, 40],
@@ -121,33 +137,23 @@ new Chart("lineChart", {
     
 });
 
-new Chart("pieChart", {
-    type: "doughnut",
+
+var piexValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+var pieyValues = [55, 49, 44, 24, 15];
+var piebarColors = ["red", "green", "blue", "orange", "brown"];
+
+new Chart("barChart", {
+    type: "bar",
     data: {
-        labels: [
-            'Red',
-            'Blue',
-            'Yellow'
-        ],
+        labels: piexValues,
         datasets: [{
-            label: 'My First Dataset',
-            data: [300, 50, 100],
-            backgroundColor: [
-                'rgb(255, 99, 132)',
-                'rgb(54, 162, 235)',
-                'rgb(255, 205, 86)'
-            ],
-            hoverOffset: 4,
-            
+            backgroundColor: piebarColors,
+            data: pieyValues
         }]
     },
-    options: {
-        /*responsive: false,*/
-        aspectRatio: 2,
-
-        },
     
 });
+
 
 
 
@@ -179,3 +185,4 @@ new Chart("polarChart", {
 
     },
 });
+
