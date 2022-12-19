@@ -3380,19 +3380,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yigit\\.nuget\\packages\\": {}
+    "C:\\Users\\Monster\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\Monster\\source\\repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj",
-      "packagesPath": "C:\\Users\\yigit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\DataAccessLayer\\obj\\",
+      "projectPath": "C:\\Users\\Monster\\source\\repos\\Lira-Project\\LiraProject\\DataAccessLayer\\DataAccessLayer.csproj",
+      "packagesPath": "C:\\Users\\Monster\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Monster\\source\\repos\\Lira-Project\\LiraProject\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\yigit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Monster\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3406,11 +3406,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj": {
-              "projectPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj"
+            "C:\\Users\\Monster\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj": {
+              "projectPath": "C:\\Users\\Monster\\source\\repos\\Lira-Project\\LiraProject\\CoreLayer\\CoreLayer.csproj"
             },
-            "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj": {
-              "projectPath": "C:\\Users\\yigit\\Source\\Repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj"
+            "C:\\Users\\Monster\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\Monster\\source\\repos\\Lira-Project\\LiraProject\\EntityLayer\\EntityLayer.csproj"
             }
           }
         }
@@ -3465,7 +3465,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

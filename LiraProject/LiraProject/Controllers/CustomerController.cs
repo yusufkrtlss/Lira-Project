@@ -24,15 +24,40 @@ namespace LiraProject.Controllers
             return View(model);
         }
         [HttpGet]
-        public IActionResult SignIn()
+        public IActionResult SignUp()
         {           
             return View();
         }
         [HttpPost]
-        public IActionResult SignIn(Customer customer)
+        public IActionResult SignUp(Customer customer)
         {
             cum.CustomerAdd(customer);
             return View();
+        }
+
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login(Customer customer)
+        {
+            
+            var query = cum.GetAllCompanies().AsQueryable();
+            
+            query = query.Where(c => c.CustomerEmail == customer.CustomerEmail && c.CustomerPassword == customer.CustomerPassword);
+
+            if(query != null)
+            {
+                return RedirectToAction("Index","Customer");
+            }
+            else
+            {
+                return BadRequest();
+            }
+           
         }
         //[HttpPost]
         //[Route("/CustomerController/Add")]
