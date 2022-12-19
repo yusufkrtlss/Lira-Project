@@ -35,14 +35,7 @@ namespace LiraProject.Controllers
             return View();
         }
 
-        public IActionResult SignIn()
-        {
-            return View();
-        }
-        public IActionResult Login()
-        {
-            return View();
-        }
+        
 
 
         [Produces("application/json")]

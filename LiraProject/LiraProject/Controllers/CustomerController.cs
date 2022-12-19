@@ -11,6 +11,7 @@ namespace LiraProject.Controllers
     public class CustomerController : Controller
     {
         CompaniesManager cm = new CompaniesManager(new EfCompaniesRepository());
+        CustomerManager cum = new CustomerManager(new EfCustomerRepository());
         //private readonly ICustomerService _customerService;
 
         //public CustomerController(ICustomerService customerService)
@@ -21,6 +22,17 @@ namespace LiraProject.Controllers
         {
             var model = cm.GetAllCompanies();
             return View(model);
+        }
+        [HttpGet]
+        public IActionResult SignIn()
+        {           
+            return View();
+        }
+        [HttpPost]
+        public IActionResult SignIn(Customer customer)
+        {
+            cum.CustomerAdd(customer);
+            return View();
         }
         //[HttpPost]
         //[Route("/CustomerController/Add")]
