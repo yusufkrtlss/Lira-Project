@@ -28,6 +28,12 @@ namespace LiraProject.Controllers
 
             
         }
+        [HttpGet]
+        public ActionResult CompanyPage(int CompanyId)
+        {
+            var model=cm.GetById(CompanyId);
+            return View(model);
+        }
 
        
         public ActionResult CompanyInfo(int CompanyId)

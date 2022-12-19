@@ -1,0 +1,89 @@
+﻿@using EntityLayer.Concrete
+@model Companies
+@{
+    ViewData["Title"] = "Summary";
+    Layout = "~/Views/Shared/_AdminDetailsLayout.cshtml";
+    string marketPrice = Model.CompanyRegularMarketPrice.ToString("#.##");
+    string marketChange = Model.CompanyRegularMarketChange.ToString("#.##");
+    string marketVolume = Model.CompanyRegularMarketVolume.ToString("#.##");
+    string marketDayLow = Model.CompanyRegularMarketDayLow.ToString("#.##");
+    string marketDayHigh = Model.CompanyRegularMarketDayHigh.ToString("#.##");
+    string marketBalance = Model.CompanyBalance.ToString("#,##0");
+    string marketIncome = Model.CompanyIncomeStatement.ToString("#,##0");
+    string marketEbitda = Model.CompanyEBITDA.ToString("#,##0");
+    string marketProfit = Model.CompanyProfit.ToString("#,##0");
+    string marketPriceGainRate = Model.CompanyPriceGainRate.ToString("#.##");
+}
+
+
+
+    
+<div class="container-fluid">
+        <div class="row">
+            <div class="dashboard-div col-md-12 fw-bold fs-3 text-light">Summary</div>
+        </div>
+        <div class="row ">
+            <div class="col-md-12">
+                <div class="card mb-3 bg-dark text-light">
+                    <div class="card-header text-warning">Summary</div>
+                    <div class="card-body row ">
+                        <div class="col-md-6">
+
+                            <p class="card-text">Market Price :          @Html.DisplayFor(modelItem=>marketPrice)</p>
+                            <p class="card-text">Market Change Percent :          @Html.DisplayFor(modelItem=>marketChange)%</p>
+                            <p class="card-text">Market Volume :          @Html.DisplayFor(modelItem=>marketVolume)</p>
+                            <p class="card-text">Day Low :          @Html.DisplayFor(modelItem=>marketDayLow)</p>
+                            <p class="card-text">Day High :          @Html.DisplayFor(modelItem=>marketDayHigh)</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="card-text">Balance :          @Html.DisplayFor(modelItem=>marketBalance)</p>
+                            <p class="card-text">Revenue :          @Html.DisplayFor(modelItem=>marketIncome)</p>
+                            <p class="card-text">EBITDA :          @Html.DisplayFor(modelItem=>marketEbitda)</p>
+                            <p class="card-text">Profit :          @Html.DisplayFor(modelItem=>marketProfit)</p>
+                            <p class="card-text">Price Gain rate :          @Html.DisplayFor(modelItem=>marketPriceGainRate)</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="card border-warning mb-3 pt-2 bg-dark text-light" id="newsId">
+  <div class="card-body">
+    <h5 class="card-title text-bold">Apple plans to let rival app stores on iPhones in EU -Bloomberg</h5>
+    <hr>
+    <p class="card-text">(Reuters) -Apple Inc is preparing to allow alternative app stores on its iPhones and iPads in the European Union as soon as late next year to comply with a new European competition...</p>
+    <a href="#" class="btn btn-warning btn-sm">Read More</a>
+  </div>
+</div>
+<div class="card border-warning mb-3 pt-2 bg-dark text-light" id="newsId">
+  <div class="card-body">
+    <h5 class="card-title text-bold">Apple plans to let rival app stores on iPhones in EU -Bloomberg</h5>
+    <hr>
+    <p class="card-text">(Reuters) -Apple Inc is preparing to allow alternative app stores on its iPhones and iPads in the European Union as soon as late next year to comply with a new European competition...</p>
+    <a href="#" class="btn btn-warning btn-sm">Read More</a>
+  </div>
+</div>
+<div class="card border-warning mb-3 pt-2 bg-dark text-light" id="newsId">
+  <div class="card-body">
+    <h5 class="card-title text-bold">Apple plans to let rival app stores on iPhones in EU -Bloomberg</h5>
+    <hr>
+    <p class="card-text">(Reuters) -Apple Inc is preparing to allow alternative app stores on its iPhones and iPads in the European Union as soon as late next year to comply with a new European competition...</p>
+    <a href="#" class="btn btn-warning btn-sm">Read More</a>
+  </div>
+</div>
+
+    </div>
+
+        <style>
+    
+        </style>
+
+        @section Scripts{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   
+}

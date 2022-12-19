@@ -1,0 +1,59 @@
+﻿@model IEnumerable<EntityLayer.Concrete.Companies>
+
+@{
+    ViewData["Title"] = "Home";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    
+}
+
+
+<h3>Welcome User</h3>
+
+    <div class="favorites">
+        <div class="card bg-dark text-danger" style="width: 18rem;">
+          <div class="card-header">
+            Favorites
+          </div>
+          <ul class="list-group list-group-flush">
+              @foreach (var item in Model.OrderByDescending(x=>x.CompanyRegularMarketPrice).Take(4))
+{
+            <li class="list-group-item bg-dark text-warning">@Html.ActionLink(@item.CompanySymbol, "CompanyPage", "Company",new { @item.CompanyId }, new { @class = "bg-dark text-warning text-decoration-none" }) </li>
+}
+          </ul>
+        </div>
+    </div>
+<div class="row row-cols-sm-1 row-cols-1 row-cols-md-2 row-cols-lg-3 p-0 cardlist">
+    
+@foreach (var item in Model.OrderByDescending(x=>x.CompanyRegularMarketPrice).Take(9))
+{
+    
+        <div class="col g-0 p-0">
+        <div class="card bg-dark text-light mb-2 mx-5 m-0 " style="width:25em;margin:0px;">
+            <div class="card-header">@item.CompanySymbol <span class="">@item.CompanyRegularMarketPrice.ToString("#.##") (%@item.CompanyRegularMarketChange.ToString("#0.##"))</span></div>
+            <div class="card-body">
+                <p class="card-text">EBITDA <span class="align-items-right justify-content-sm-end">@item.CompanyEBITDA.ToString("#,##0")</span></p>
+                <p class="card-text">Profit @item.CompanyProfit.ToString("#,##0")</p>
+                <p class="card-text">Balance @item.CompanyBalance.ToString("#,##0")</p>
+            </div>
+            <div class="card-footer collapsed m-0 d-flex align-items-center justify-content-around">
+                @Html.ActionLink("See Company Page", "CompanyPage", "Company",new { @item.CompanyId }, new { @class = "btn btn-warning" }) 
+                <a class="justify-content-end"><i class="bi bi-star"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    
+}
+
+</div>
+
+
+<style>
+    .favorites{
+        display:block;
+        float:left;
+    }
+    .cardlist{
+    
+}
+</style>

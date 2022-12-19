@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiraProject", "LiraProject\LiraProject.csproj", "{5DA74160-63E6-42D2-8F1F-CC381EEF4514}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiraProject", "LiraProject\LiraProject.csproj", "{5DA74160-63E6-42D2-8F1F-CC381EEF4514}"
 	ProjectSection(ProjectDependencies) = postProject
 		{21E63339-88AC-43D8-B629-90565558D09F} = {21E63339-88AC-43D8-B629-90565558D09F}
 		{4E7E5A30-28CD-43CE-A831-FB629EEA3FEB} = {4E7E5A30-28CD-43CE-A831-FB629EEA3FEB}
@@ -11,16 +11,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiraProject", "LiraProject\
 		{9DD71FB2-78FA-4AF7-9B3A-0C6DD8FB2E38} = {9DD71FB2-78FA-4AF7-9B3A-0C6DD8FB2E38}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{93593445-8582-414B-8998-C993784D8CB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{93593445-8582-414B-8998-C993784D8CB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{4E7E5A30-28CD-43CE-A831-FB629EEA3FEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{4E7E5A30-28CD-43CE-A831-FB629EEA3FEB}"
 	ProjectSection(ProjectDependencies) = postProject
 		{93593445-8582-414B-8998-C993784D8CB7} = {93593445-8582-414B-8998-C993784D8CB7}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreLayer", "CoreLayer\CoreLayer.csproj", "{21E63339-88AC-43D8-B629-90565558D09F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreLayer", "CoreLayer\CoreLayer.csproj", "{21E63339-88AC-43D8-B629-90565558D09F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{9DD71FB2-78FA-4AF7-9B3A-0C6DD8FB2E38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{9DD71FB2-78FA-4AF7-9B3A-0C6DD8FB2E38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLira", "TestLira\TestLira.csproj", "{DC1FF34A-A1B1-4D25-8612-4815EA88F732}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +50,10 @@ Global
 		{9DD71FB2-78FA-4AF7-9B3A-0C6DD8FB2E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DD71FB2-78FA-4AF7-9B3A-0C6DD8FB2E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DD71FB2-78FA-4AF7-9B3A-0C6DD8FB2E38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC1FF34A-A1B1-4D25-8612-4815EA88F732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC1FF34A-A1B1-4D25-8612-4815EA88F732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC1FF34A-A1B1-4D25-8612-4815EA88F732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC1FF34A-A1B1-4D25-8612-4815EA88F732}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
