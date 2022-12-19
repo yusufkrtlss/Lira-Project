@@ -5,6 +5,7 @@ using DataAccessLayer.Concrete.EntityFramework;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using Microsoft.AspNetCore.Http;
 
 namespace LiraProject.Controllers
 {
@@ -42,7 +43,7 @@ namespace LiraProject.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(Customer customer)
+        public ActionResult Login(Customer customer)
         {
             
             var query = cum.GetAllCompanies().AsQueryable();
@@ -51,6 +52,9 @@ namespace LiraProject.Controllers
 
             if(query != null)
             {
+                
+                HttpContext.Session.SetString("CustomerLogin", customer.CustomerEmail);
+                
                 return RedirectToAction("Index","Customer");
             }
             else
@@ -59,13 +63,6 @@ namespace LiraProject.Controllers
             }
            
         }
-        //[HttpPost]
-        //[Route("/CustomerController/Add")]
-        //public async Task<IActionResult> Add(CustomerAddDto DTO)
-        //{
-        //    await _customerService.Add(DTO);
-        //    var jsonCustomers = JsonConvert.SerializeObject(DTO);
-        //    return Json(jsonCustomers);
-        //}
+       
     }
 }

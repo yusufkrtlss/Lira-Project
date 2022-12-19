@@ -34,8 +34,12 @@ namespace LiraProject.Controllers
         {
             return View();
         }
+        public IActionResult Contact()
+        {
+            return View();
+        }
 
-        
+
 
 
         [Produces("application/json")]

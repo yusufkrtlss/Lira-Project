@@ -48,7 +48,7 @@ charts.forEach(function (chart) {
             labels: ["2021/9", "2021/12", "2022/3", "2022/6", "2022/9", "2022/12"],
             datasets: [
                 {
-                    label: "# of Votes",
+                    label: "Sales",
                     data: [12, 19, 3, 5, 2, 3],
                     backgroundColor: [
                         "rgba(255, 99, 132, 0.2)",

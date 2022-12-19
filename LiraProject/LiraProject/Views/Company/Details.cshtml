@@ -3,7 +3,7 @@
 @model Companies
 @{
     ViewData["Title"] = "Summary";
-    Layout = "~/Views/Shared/_AdminDetailsLayout.cshtml";
+    Layout = "~/Views/Shared/_DetailsLayout.cshtml";
     string marketPrice = Model.CompanyRegularMarketPrice.ToString("#.##");
     string marketChange = Model.CompanyRegularMarketChange.ToString("#.##");
     string marketVolume = Model.CompanyRegularMarketVolume.ToString("#.##");
